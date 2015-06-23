@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<path>oilpsi.ac</path>
+
+    <animation>
+        <type>material</type>
+        <object-name>OilPsi.face</object-name>
+        <object-name>OilPsi.needle1</object-name>
+        <object-name>OilPsi.needle2</object-name>
+        <emission>
+            <red>0.8</red>
+            <green>0.4</green>
+            <blue>0.2</blue>
+            <factor-prop>/systems/electrical/outputs/instrument-lights-norm</factor-prop>
+        </emission>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>OilPsi.needle1</object-name>
+        <property>engines/engine[2]/oil-pressure-psi</property>
+        <interpolation>
+            <entry><ind>0.0</ind><dep>0.0</dep></entry>
+            <entry><ind>50</ind><dep>34.5</dep></entry>
+            <entry><ind>150</ind><dep>80</dep></entry>
+            <entry><ind>200</ind><dep>115</dep></entry>
+        </interpolation>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+        <center>
+            <x-m>0</x-m>
+            <y-m>-0.024</y-m>
+            <z-m>0.001</z-m>
+        </center>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>OilPsi.needle2</object-name>
+        <property>engines/engine[3]/oil-pressure-psi</property>
+        <interpolation>
+            <entry><ind>0.0</ind><dep>0.0</dep></entry>
+            <entry><ind>50</ind><dep>34.5</dep></entry>
+            <entry><ind>150</ind><dep>80</dep></entry>
+            <entry><ind>200</ind><dep>115</dep></entry>
+        </interpolation>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0.024</y-m>
+            <z-m>0.001</z-m>
+        </center>
+    </animation>
+
+</PropertyList>

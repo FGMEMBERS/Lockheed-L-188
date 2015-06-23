@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<path>swap-nav.ac</path>
+
+<animation>
+  <type>material</type>
+  <object-name>SwDevFreq</object-name>
+  <emission>
+    <red>0.005</red>
+    <green>0.005</green>
+    <blue>0.005</blue>
+    <factor-prop>/systems/electrical/outputs/instrument-lights-norm</factor-prop>
+  </emission>
+</animation>
+
+<animation>
+  <type>material</type>
+  <object-name>SwDevFreq</object-name>
+  <emission>
+    <red>0.05</red>
+    <green>0.025</green>
+    <blue>0.0125</blue>
+    <factor-prop>/systems/electrical/outputs/instrument-lights-norm</factor-prop>
+  </emission>
+</animation>
+
+<animation>
+  <type>material</type>
+  <object-name>Placard</object-name>
+  <emission>
+      <red>0.256</red>
+      <green>0.128</green>
+      <blue>0.064</blue>
+      <factor-prop>/systems/electrical/outputs/instrument-lights-norm</factor-prop>
+  </emission>
+</animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>SwDevFreq</object-name>
+  <property>/instrumentation/deviation-indicator/frequency</property>
+  <interpolation>
+    <entry><ind>1</ind><dep>-25</dep></entry>
+    <entry><ind>0</ind><dep>25</dep></entry>
+  </interpolation>
+  <center>
+    <x-m>0.0</x-m>
+    <y-m>0.0</y-m>
+    <z-m>0.012</z-m>
+  </center>
+  <axis>
+    <x>0.0</x>
+    <y>1.0</y>
+    <z>0.0</z>
+  </axis>
+</animation>
+
+<animation>
+  <type>pick</type>
+  <object-name>Placard</object-name>
+  <action>
+    <button>0</button>
+    <repeatable>false</repeatable>    
+    <binding>
+      <command>property-toggle</command>
+      <property>/instrumentation/deviation-indicator/frequency</property>
+    </binding>
+    <binding>
+      <command>property-swap</command>
+      <property>/instrumentation/nav[0]/frequencies/selected-mhz</property>
+      <property>/instrumentation/nav[1]/frequencies/selected-mhz</property>
+    </binding>
+    <binding>
+      <command>property-swap</command>
+      <property>/instrumentation/nav[0]/frequencies/standby-mhz</property>
+      <property>/instrumentation/nav[1]/frequencies/standby-mhz</property>
+    </binding>
+    <binding>
+      <command>property-swap</command>
+      <property>/instrumentation/adf[0]/frequencies/selected-khz</property>
+      <property>/instrumentation/adf[1]/frequencies/selected-khz</property>
+    </binding>
+    <binding>
+      <command>property-swap</command>
+      <property>/instrumentation/adf[0]/frequencies/standby-khz</property>
+      <property>/instrumentation/adf[1]/frequencies/standby-khz</property>
+    </binding>
+    <binding>
+      <command>property-toggle</command>
+      <property>/sim/sound/switch1</property>
+    </binding>
+  </action>
+</animation>
+
+</PropertyList>
+

@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<path>asi.ac</path>
+
+<animation>
+  <type>material</type>
+  <object-name>ASI.Face</object-name>
+  <object-name>ASI.Needle</object-name>
+  <object-name>IAS.Needle</object-name>
+  <emission>
+      <red>0.8</red>
+      <green>0.4</green>
+      <blue>0.2</blue>
+      <factor-prop>/systems/electrical/outputs/instrument-lights-norm</factor-prop>
+  </emission>
+</animation>
+
+<animation>
+  <type>material</type>
+  <object-name>IAS.Set</object-name>
+  <emission>
+    <red>0.25</red>
+    <green>0.25</green>
+    <blue>0.25</blue>
+    <factor-prop>/systems/electrical/outputs/instrument-lights-norm</factor-prop>
+  </emission>
+</animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>ASI.Needle</object-name>
+  <property>/instrumentation/airspeed-indicator/indicated-speed-kt</property>
+  <interpolation>
+    <entry><ind>  0</ind><dep>    0</dep></entry>
+    <entry><ind> 25</ind><dep>   16</dep></entry>
+    <entry><ind> 50</ind><dep> 24.5</dep></entry>
+    <entry><ind>100</ind><dep> 93.5</dep></entry>
+    <entry><ind>150</ind><dep>139.5</dep></entry>
+    <entry><ind>200</ind><dep>185.5</dep></entry>
+    <entry><ind>250</ind><dep>224.5</dep></entry>
+    <entry><ind>300</ind><dep>263.5</dep></entry>
+    <entry><ind>350</ind><dep>301.5</dep></entry>
+    <entry><ind>400</ind><dep>339.5</dep></entry>
+  </interpolation>
+  <axis>
+    <x>-1</x>
+    <y>0</y>
+    <z>0</z>
+  </axis>
+</animation>
+
+<animation>
+  <type>rotate</type>
+  <object-name>IAS.Needle</object-name>
+  <property>/autopilot/settings/target-speed-kt</property>
+  <interpolation>
+    <entry><ind>  0</ind><dep>    0</dep></entry>
+    <entry><ind> 25</ind><dep>   16</dep></entry>
+    <entry><ind> 50</ind><dep> 24.5</dep></entry>
+    <entry><ind>100</ind><dep> 93.5</dep></entry>
+    <entry><ind>150</ind><dep>139.5</dep></entry>
+    <entry><ind>200</ind><dep>185.5</dep></entry>
+    <entry><ind>250</ind><dep>224.5</dep></entry>
+    <entry><ind>300</ind><dep>263.5</dep></entry>
+    <entry><ind>350</ind><dep>301.5</dep></entry>
+    <entry><ind>400</ind><dep>339.5</dep></entry>
+  </interpolation>
+  <axis>
+    <x>-1</x>
+    <y>0</y>
+    <z>0</z>
+  </axis>
+</animation>
+
+<!--  speed.set control -->
+  <animation>
+    <type>rotate</type>
+    <object-name>IAS.Set</object-name>
+    <property>/autopilot/settings/target-speed-kt</property>
+    <factor>5</factor>
+      <center>
+      <x-m> 0.0</x-m>
+      <y-m> 0.0363</y-m>
+      <z-m> 0.0352</z-m>
+      </center>
+      <axis>
+        <x>-1 </x>
+        <y> 0 </y>
+        <z> 0 </z>
+      </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>IAS.Set</object-name>
+    <object-name>ASI.Face</object-name>
+    <visible>true</visible>
+    <action>
+      <name>small increase (scrollwheel)</name>
+      <button>3</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/autopilot/settings/target-speed-kt</property>
+        <step>5</step>
+        <min>0</min>
+        <max>400</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>small decrease (scrollwheel)</name>
+      <button>4</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/autopilot/settings/target-speed-kt</property>
+        <step>-5</step>
+        <min>0</min>
+        <max>400</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>increase</name>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/autopilot/settings/target-speed-kt</property>
+        <step>10</step>
+        <min>0</min>
+        <max>400</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>decrease</name>
+      <button>1</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/autopilot/settings/target-speed-kt</property>
+        <step>-10</step>
+        <min>0</min>
+        <max>400</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+  </animation>
+
+</PropertyList>

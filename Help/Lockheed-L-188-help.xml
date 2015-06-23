@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<!-- Specific keys -->
+
+   <key>
+    <name>F2</name>
+    <desc>Unlock/Lock Prop Reversing</desc>
+   </key>
+   <key>
+    <name>Backspace</name>
+    <desc>Engage/Disengage Prop Reverse</desc>
+   </key>
+
+</PropertyList>

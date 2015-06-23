@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+
+
+<PropertyList>
+
+
+    <path>flightdeck.ac</path>
+
+
+    <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/mag_compass/mag_compass.xml</path>
+     <offsets>
+      <x-m>-10.57582</x-m>
+      <y-m>0</y-m>
+      <z-m>1.37</z-m>
+      <roll-deg>180</roll-deg>
+      <pitch-deg>0.0</pitch-deg>
+      </offsets>
+    </model>
+    <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/radar/radar.xml</path>
+     <offsets>
+      <x-m>-10.32617</x-m>
+      <y-m>-0.5</y-m>
+      <z-m>0.85</z-m>
+      <pitch-deg>0.0</pitch-deg>
+      </offsets>
+    </model>
+    <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/radar/radar.xml</path>
+     <offsets>
+      <x-m>-10.32617</x-m>
+      <y-m>0.5</y-m>
+      <z-m>0.85</z-m>
+      <pitch-deg>0.0</pitch-deg>
+      </offsets>
+    </model>
+    <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/ai/ai.xml</path>
+     <offsets>
+      <x-m>-10.35</x-m>
+      <y-m>0.7</y-m>
+      <z-m>1.00</z-m>
+      <pitch-deg>0.0</pitch-deg>
+      </offsets>
+    </model>
+    <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/ai/ai.xml</path>
+     <offsets>
+      <x-m>-10.35</x-m>
+      <y-m>-0.7</y-m>
+      <z-m>1.00</z-m>
+      <pitch-deg>0.0</pitch-deg>
+      </offsets>
+    </model>
+</PropertyList>

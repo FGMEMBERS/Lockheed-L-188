@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<path>vsi-gauge.ac</path>
+
+    <animation>
+        <type>material</type>
+        <object-name>VSI.face</object-name>
+        <object-name>VSIneedle</object-name>
+        <object-name>VSset.Needle</object-name>
+        <emission>
+            <red>0.8</red>
+            <green>0.4</green>
+            <blue>0.2</blue>
+            <factor-prop>/systems/electrical/outputs/instrument-lights-norm</factor-prop>
+        </emission>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>VSIneedle</object-name>
+        <property>/instrumentation/vertical-speed-indicator/indicated-speed-fpm</property>
+        <interpolation>
+            <entry><ind>-2000.0</ind><dep>-173.0</dep></entry>
+            <entry><ind>-1500.0</ind><dep>-126.0</dep></entry>
+            <entry><ind>-1000.0</ind><dep>-84.0</dep></entry>
+            <entry><ind>-500.0</ind><dep>-41.5</dep></entry>
+            <entry><ind>0.0</ind><dep>0.0</dep></entry>
+            <entry><ind>500.0</ind><dep>41.5</dep></entry>
+            <entry><ind>1000.0</ind><dep>84.0</dep></entry>
+            <entry><ind>1500.0</ind><dep>126.0</dep></entry>
+            <entry><ind>2000.0</ind><dep>173.0</dep></entry>
+        </interpolation>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+        </center>
+    </animation>
+
+
+    <animation>
+      <type>rotate</type>
+      <object-name>VSset.Needle</object-name>
+      <property>/autopilot/settings/vertical-speed-fpm</property>
+      <min>-2000.0</min>
+      <max>2000.0</max>
+      <scale>1.0</scale>
+      <interpolation>
+          <entry><ind>-2000.0</ind><dep>-173.0</dep></entry>
+          <entry><ind>-1500.0</ind><dep>-126.0</dep></entry>
+          <entry><ind>-1000.0</ind><dep>-84.0</dep></entry>
+          <entry><ind>-500.0</ind><dep>-41.5</dep></entry>
+          <entry><ind>0.0</ind><dep>0.0</dep></entry>
+          <entry><ind>500.0</ind><dep>41.5</dep></entry>
+          <entry><ind>1000.0</ind><dep>84.0</dep></entry>
+          <entry><ind>1500.0</ind><dep>126.0</dep></entry>
+          <entry><ind>2000.0</ind><dep>173.0</dep></entry>
+      </interpolation>
+      <axis>
+        <x>-1</x>
+        <y>0</y>
+        <z>0</z>
+      </axis>
+    </animation>
+
+
+<!--  speed.set control -->
+  <animation>
+    <type>rotate</type>
+    <object-name>VSset.Knob</object-name>
+    <property>/autopilot/settings/vertical-speed-fpm</property>
+    <factor>5</factor>
+      <center>
+      <x-m> 4.403</x-m>
+      <y-m> 0.033</y-m>
+      <z-m> 0.033</z-m>
+      </center>
+      <axis>
+        <x>-1 </x>
+        <y> 0 </y>
+        <z> 0 </z>
+      </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>VSset.Knob</object-name>
+    <object-name>VSI.face</object-name>
+    <visible>true</visible>
+    <action>
+      <name>small increase (scrollwheel)</name>
+      <button>3</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/autopilot/settings/vertical-speed-fpm</property>
+        <step>100</step>
+        <min>-2000</min>
+        <max>2000</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>small decrease (scrollwheel)</name>
+      <button>4</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/autopilot/settings/vertical-speed-fpm</property>
+        <step>-100</step>
+        <min>-2000</min>
+        <max>2000</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>increase</name>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/autopilot/settings/vertical-speed-fpm</property>
+        <step>10</step>
+        <min>-2000</min>
+        <max>2000</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+    <action>
+      <name>decrease</name>
+      <button>1</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>/autopilot/settings/vertical-speed-fpm</property>
+        <step>-10</step>
+        <min>-2000</min>
+        <max>2000</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+  </animation>
+
+</PropertyList>

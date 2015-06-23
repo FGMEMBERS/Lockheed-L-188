@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<path>oiltemp.ac</path>
+
+    <animation>
+        <type>material</type>
+        <object-name>OilTemp.face</object-name>
+        <object-name>OilTemp.needle1</object-name>
+        <object-name>OilTemp.needle2</object-name>
+        <emission>
+            <red>0.8</red>
+            <green>0.4</green>
+            <blue>0.2</blue>
+            <factor-prop>/systems/electrical/outputs/instrument-lights-norm</factor-prop>
+        </emission>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>OilTemp.needle1</object-name>
+        <property>engines/engine[2]/oil-temperature-degf</property>
+        <interpolation>
+            <entry><ind>0.0</ind><dep>0.0</dep></entry>
+            <entry><ind>248</ind><dep>109</dep></entry>
+        </interpolation>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+        <center>
+            <x-m>0</x-m>
+            <y-m>-0.028</y-m>
+            <z-m>0</z-m>
+        </center>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>OilTemp.needle2</object-name>
+        <property>engines/engine[3]/oil-temperature-degf</property>
+        <interpolation>
+            <entry><ind>0.0</ind><dep>0.0</dep></entry>
+            <entry><ind>248</ind><dep>109</dep></entry>
+        </interpolation>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0.028</y-m>
+            <z-m>0</z-m>
+        </center>
+    </animation>
+
+</PropertyList>

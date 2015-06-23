@@ -1,0 +1,396 @@
+<?xml version="1.0"?>
+<!-- 
+Sperry Model R-1 Pictorial Deviation Indicator
+Syd Adams
+-->
+
+<PropertyList>
+
+<path>pic-dev.ac</path>
+
+    <animation>
+      <type>material</type>
+      <object-name>crs.set</object-name>
+      <emission>
+        <red>0.25</red>
+        <green>0.25</green>
+        <blue>0.25</blue>
+        <factor-prop>/systems/electrical/outputs/instrument-lights-norm</factor-prop>
+      </emission>
+    </animation>
+
+    <animation>
+        <type>material</type>
+        <object-name>PicDev.face</object-name>
+        <object-name>CrsNum.1</object-name>
+        <object-name>CrsNum.2</object-name>
+        <object-name>CrsNum.3</object-name>
+        <object-name>PicDev.compass</object-name>
+        <object-name>PicDev.gs</object-name>
+        <object-name>PicDev.crs</object-name>
+        <object-name>PicDev.pwr-off</object-name>
+        <object-name>PicDev.nav-off</object-name>
+        <object-name>PicDev.to-flag</object-name>
+        <object-name>PicDev.from-flag</object-name>
+        <emission>
+            <red>0.8</red>
+            <green>0.5</green>
+            <blue>0.3</blue>
+            <factor-prop>/systems/electrical/outputs/instrument-lights-norm</factor-prop>
+        </emission>
+    </animation>
+
+    <animation>
+      <type>material</type>
+      <object-name>dmeOn</object-name>
+      <emission>
+        <red>   2 </red>
+        <green> 2 </green>
+        <blue>  0 </blue>
+      </emission>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>dmeOn</object-name>
+        <condition>
+          <or>
+            <property>/instrumentation/nav/gs-in-range</property>
+            <and>
+              <property>/instrumentation/dme/in-range</property>
+              <less-than>
+                  <property>/instrumentation/dme/indicated-distance-nm</property>
+                  <value>2.0</value>
+              </less-than>
+              <greater-than>
+                  <property>/instrumentation/dme/indicated-distance-nm</property>
+                  <value>-0.02</value>
+              </greater-than>
+            </and>
+          </or>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>PicDev.pwr-off</object-name>
+        <condition>
+            <less-than>
+                <property>/systems/electrical/outputs/nav</property>
+                <value>5</value>
+            </less-than>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>PicDev.nav-off</object-name>
+        <condition>
+            <not>
+                <property>/instrumentation/nav/data-is-valid</property>
+            </not>
+        </condition>
+        <property>/instrumentation/heading-indicator/indicated-heading-deg</property>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>PicDev.to-flag</object-name>
+        <condition>
+            <property>/instrumentation/nav/to-flag</property>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>PicDev.from-flag</object-name>
+        <condition>
+            <property>/instrumentation/nav/from-flag</property>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>PicDev.compass</object-name>
+        <object-name>PicDev.crs</object-name>
+        <object-name>PicDev.to-flag</object-name>
+        <object-name>PicDev.from-flag</object-name>
+        <object-name>PicDev.nav-off</object-name>
+        <property>/instrumentation/heading-indicator/indicated-heading-deg</property>
+        <axis>
+            <x>1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+        </axis>
+        <center>
+            <x-m>0.0</x-m>
+            <y-m>0.0</y-m>
+            <z-m>-0.006</z-m>
+        </center>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>PicDev.compass</object-name>
+        <object-name>PicDev.crs</object-name>
+        <object-name>PicDev.to-flag</object-name>
+        <object-name>PicDev.from-flag</object-name>
+        <object-name>PicDev.nav-off</object-name>
+        <property>/instrumentation/nav/radials/selected-deg</property>
+        <axis>
+            <x>-1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+        </axis>
+        <center>
+            <x-m>0.0</x-m>
+            <y-m>0.0</y-m>
+            <z-m>-0.006</z-m>
+        </center>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>PicDev.crs</object-name>
+        <property>/instrumentation/nav/heading-needle-deflection</property>
+        <interpolation>
+        <entry><ind>-10.0</ind><dep>-0.0152</dep></entry>
+        <entry><ind>10.0</ind><dep>0.0152</dep></entry>
+    </interpolation>
+        <axis>
+            <x>0.0</x>
+            <y>1.0</y>
+            <z>0.0</z>
+        </axis>
+        <center>
+            <x-m>0.0</x-m>
+            <y-m>0.0</y-m>
+            <z-m>-0.006</z-m>
+        </center>
+    </animation>
+
+    <animation>
+        <type>translate</type>
+        <object-name>PicDev.gs</object-name>
+        <property>/instrumentation/nav/gs-needle-deflection</property>
+        <interpolation>
+        <entry><ind>-400.0</ind><dep>-0.0237</dep></entry>
+        <entry><ind>-10.0</ind><dep>-0.0237</dep></entry>
+        <entry><ind>  0 </ind><dep>  0 </dep></entry>
+        <entry><ind>10.0</ind><dep>0.0237</dep></entry>
+        <entry><ind>400.0</ind><dep>0.0237</dep></entry>
+    </interpolation>
+        <axis>
+            <x>0.0</x>
+            <y>0.0</y>
+            <z>1.0</z>
+        </axis>
+        <center>
+            <x-m>0.0</x-m>
+            <y-m>0.0</y-m>
+            <z-m>-0.006</z-m>
+        </center>
+    </animation>
+
+<animation>
+    <type>textranslate</type>
+    <object-name>CrsNum.1</object-name>
+    <property>/instrumentation/nav/radials/selected-deg</property>
+    <factor>0.001</factor>
+    <step>100</step>
+    <scroll>1</scroll>
+    <axis>
+        <x>0</x>
+        <y>1</y>
+        <z>0</z>
+    </axis>
+</animation>
+
+<animation>
+    <type>textranslate</type>
+    <object-name>CrsNum.2</object-name>
+    <property>/instrumentation/nav/radials/selected-deg</property>
+    <factor>0.01</factor>
+    <step>10</step>
+    <scroll>1</scroll>
+    <axis>
+        <x>0</x>
+        <y>1</y>
+        <z>0</z>
+    </axis>
+</animation>
+
+<animation>
+    <type>textranslate</type>
+    <object-name>CrsNum.3</object-name>
+    <property>/instrumentation/nav/radials/selected-deg</property>
+    <factor>0.1</factor>
+    <step>1</step>
+    <scroll>1</scroll>
+    <axis>
+        <x>0</x>
+        <y>1</y>
+        <z>0</z>
+    </axis>
+</animation>
+
+<!-- Hotspots -->
+
+    <animation>
+      <type>rotate</type>
+      <object-name>crs.set</object-name>
+      <property>/instrumentation/nav/radials/selected-deg</property>
+        <factor>-1</factor>
+      <center>
+      <x-m> 4.403</x-m>
+      <y-m> 0.033</y-m>
+      <z-m> 0.033</z-m>
+      </center>
+      <axis>
+        <x> 1 </x>
+        <y> 0 </y>
+        <z> 0 </z>
+      </axis>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>crs.set</object-name>
+        <object-name>PicDev</object-name>
+        <object-name>PicDev.back</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>true</repeatable>
+            <interval-sec>0.2</interval-sec>
+            <binding>
+                <condition>
+                    <not>
+                        <property>devices/status/keyboard/shift</property>
+                    </not>
+                </condition>
+                <command>property-adjust</command>
+                <property>instrumentation/nav/radials/selected-deg</property>
+                <step>10</step>
+                <min>0</min>
+                <max>359</max>
+                <wrap>1</wrap>
+            </binding>
+            <binding>
+                <condition>
+                    <property>devices/status/keyboard/shift</property>
+                </condition>
+                <command>property-adjust</command>
+                <property>instrumentation/nav/radials/selected-deg</property>
+                <step>20</step>
+                <min>0</min>
+                <max>359</max>
+                <wrap>1</wrap>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>crs.set</object-name>
+        <object-name>PicDev</object-name>
+        <object-name>PicDev.back</object-name>
+        <action>
+            <button>1</button>
+            <repeatable>true</repeatable>
+            <interval-sec>0.2</interval-sec>
+            <binding>
+                <condition>
+                    <not>
+                        <property>devices/status/keyboard/shift</property>
+                    </not>
+                </condition>
+                <command>property-adjust</command>
+                <property>instrumentation/nav/radials/selected-deg</property>
+                <step>-10</step>
+                <min>0</min>
+                <max>359</max>
+                <wrap>1</wrap>
+            </binding>
+            <binding>
+                <condition>
+                    <property>devices/status/keyboard/shift</property>
+                </condition>
+                <command>property-adjust</command>
+                <property>instrumentation/nav/radials/selected-deg</property>
+                <step>-20</step>
+                <min>0</min>
+                <max>359</max>
+                <wrap>1</wrap>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>crs.set</object-name>
+        <object-name>PicDev</object-name>
+        <object-name>PicDev.back</object-name>
+        <action>
+            <button>3</button>
+            <binding>
+                <condition>
+                    <not>
+                        <property>devices/status/keyboard/shift</property>
+                    </not>
+                </condition>
+                <command>property-adjust</command>
+                <property>instrumentation/nav/radials/selected-deg</property>
+                <step>1</step>
+                <min>0</min>
+                <max>359</max>
+                <wrap>1</wrap>
+            </binding>
+            <binding>
+                <condition>
+                    <property>devices/status/keyboard/shift</property>
+                </condition>
+                <command>property-adjust</command>
+                <property>instrumentation/nav/radials/selected-deg</property>
+                <step>5</step>
+                <min>0</min>
+                <max>359</max>
+                <wrap>1</wrap>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>crs.set</object-name>
+        <object-name>PicDev</object-name>
+        <object-name>PicDev.back</object-name>
+        <action>
+            <button>4</button>
+            <binding>
+                <condition>
+                    <not>
+                        <property>devices/status/keyboard/shift</property>
+                    </not>
+                </condition>
+                <command>property-adjust</command>
+                <property>instrumentation/nav/radials/selected-deg</property>
+                <step>-1</step>
+                <min>0</min>
+                <max>359</max>
+                <wrap>1</wrap>
+            </binding>
+            <binding>
+                <condition>
+                    <property>devices/status/keyboard/shift</property>
+                </condition>
+                <command>property-adjust</command>
+                <property>instrumentation/nav/radials/selected-deg</property>
+                <step>-5</step>
+                <min>0</min>
+                <max>359</max>
+                <wrap>1</wrap>
+            </binding>
+        </action>
+    </animation>
+
+</PropertyList>

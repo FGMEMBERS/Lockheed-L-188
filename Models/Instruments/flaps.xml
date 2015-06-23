@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+    <path>flap.ac</path>
+
+    <animation>
+        <type>material</type>
+        <object-name>FLAP.face</object-name>
+        <object-name>FLAP.needle</object-name>
+        <emission>
+            <red>0.8</red>
+            <green>0.5</green>
+            <blue>0.3</blue>
+            <factor-prop>/systems/electrical/outputs/instrument-lights-norm</factor-prop>
+        </emission>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>FLAP.needle</object-name>
+        <property>surface-positions/flap-pos-norm</property>
+        <interpolation>
+            <entry><ind>0.0</ind><dep>0.0</dep></entry>
+            <entry><ind>0.2</ind><dep>27.50</dep></entry>
+            <entry><ind>0.4</ind><dep>70.0</dep></entry>
+            <entry><ind>0.6</ind><dep>111.0</dep></entry>
+            <entry><ind>0.8</ind><dep>147.0</dep></entry>
+            <entry><ind>1.0</ind><dep>173.0</dep></entry>
+        </interpolation>
+        <axis>
+            <x>-1.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+        </axis>
+    </animation>
+
+</PropertyList>

@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!--
+  File:     eng_R-2800.xml
+  Author:   Ron Jensen
+
+  Inputs:
+    name:           Pratt & Whitney R-2800 Double Wasp
+    type:           piston
+    power:          2000.0 hp
+    augmented?      no
+    injected?       no
+    
+    References:
+    NACA-WR-L-579 (gives 1100 bhp @ 612 lbs/h fuel flow and an FAR of 0.08
+    FAA Type Data Certificate E-231
+    
+
+    
+-->
+
+<piston_engine name="R-2800-CA15">
+  <minmp unit="INHG">         6.5  </minmp>	<!-- Deprecated -->
+  <maxmp unit="INHG">        29.92 </maxmp>	<!-- Deprecated -->
+  <displacement unit="IN3">2804.0  </displacement>
+  <maxhp>                  2100.0  </maxhp>	<!-- Deprecated -->
+  <bsfc>                      0.57 </bsfc>
+  <cycles>                    4.0  </cycles>
+  <idlerpm>                 500.0  </idlerpm>
+  <maxrpm>                 2700.0  </maxrpm>
+  <maxthrottle>               1.0  </maxthrottle>
+  <minthrottle>               0.1  </minthrottle>
+  <sparkfaildrop>             0.1  </sparkfaildrop>
+  <numboostspeeds> 2   </numboostspeeds>
+  <boostoverride>  0   </boostoverride>
+
+  <ratedboost1>    8.15</ratedboost1> <!-- 46.5 inHg -->
+  <ratedpower1> 1900   </ratedpower1>
+  <ratedrpm1>   2600   </ratedrpm1>
+  <ratedaltitude1> 4900 </ratedaltitude1>
+
+  <ratedboost2>    7.41</ratedboost2> <!-- 45 inHg -->
+  <ratedpower2> 1600   </ratedpower2>
+  <ratedrpm2>   2600   </ratedrpm2>
+  <ratedaltitude2> 16200 </ratedaltitude2>
+
+  <takeoffboost> 11.59    </takeoffboost>   <!-- 53.5 inHg -->
+</piston_engine> 

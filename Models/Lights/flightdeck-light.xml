@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+
+	<path>flightdeck-light.ac</path>
+
+	<!-- No preview for fgrun-->
+	<animation>
+		<object-name>LightVolume1</object-name>
+		<nopreview/>
+	</animation>
+
+	<!-- Rembrand - Search light -->
+	<animation>
+		<type>select</type>
+		<object-name>LightVolume1</object-name>
+    <condition>
+			<property>/sim/rendering/rembrandt/enabled</property>
+    </condition>
+	</animation>
+
+	<!-- crane light bottom white -->
+	<animation>
+		<type>light</type>
+		<light-type>point</light-type>
+		<name>FlightdeckLight</name>
+		<object-name>LightVolume1</object-name>
+		<position>
+			<x>0</x>
+			<y>0</y>
+			<z>0</z>
+		</position>
+		<direction>
+			<x>-0.3</x>
+			<y> 0.0</y>
+			<z>-0.7</z>
+		</direction>
+    <dim-factor>
+      <property>sim/multiplay/generic/float[3]</property>
+      <factor>1</factor>
+      <offset>0</offset>
+      <min>0</min>
+      <max>1</max>
+    </dim-factor>
+		<diffuse>
+			<r>1.0</r>
+			<g>1.0</g>
+			<b>1.0</b>
+			<a>1.0</a>
+		</diffuse>
+		<specular>
+			<r>1.0</r>
+			<g>1.0</g>
+			<b>1.0</b>
+			<a>1.0</a>
+		</specular>
+		<attenuation>
+			<c>1.0</c>
+			<l>0.002</l>
+			<q>0.00005</q>
+		</attenuation>
+		<exponent>40</exponent>
+		<near-m>0.05</near-m>
+		<far-m>250</far-m>
+		<cutoff>40</cutoff>
+	</animation>
+	
+
+	
+</PropertyList>

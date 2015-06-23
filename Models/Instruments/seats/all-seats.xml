@@ -1,0 +1,1200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<PropertyList>
+
+
+  <!-- All seats from the L-188 -->
+
+  <!-- L-188 0.420 -->
+
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m> -7.09760 </x-m>
+
+      <y-m> -1.325 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m> -7.09760 </x-m>
+
+      <y-m> -0.905 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m> -6.12190 </x-m>
+
+      <y-m> -1.325 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m> -6.12190 </x-m>
+
+      <y-m> -0.905 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m> -5.14620 </x-m>
+
+      <y-m> -1.325 </y-m>
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m> -5.14620 </x-m>
+
+      <y-m> -0.905 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m> -0.98510 </x-m>
+
+      <y-m> -1.325 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m> -0.98510 </x-m>
+
+      <y-m> -0.905 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m> 0.00940 </x-m>
+
+      <y-m> -1.325 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m> 0.00940 </x-m>
+
+      <y-m> -0.905 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m> 0.96630 </x-m>
+
+      <y-m> -1.325 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m> 0.96630 </x-m>
+
+      <y-m> -0.905 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m> 1.94200 </x-m>
+
+      <y-m> -1.325 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m> 1.94200 </x-m>
+
+      <y-m> -0.905 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m> 2.91770  </x-m>
+
+      <y-m> -1.325 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m> 2.91770  </x-m>
+
+      <y-m> -0.905 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m> 3.89340 </x-m>
+
+      <y-m> -1.325 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m> 3.89340 </x-m>
+
+      <y-m> -0.905 </y-m>
+
+      <z-m> 0.28570 </z-m>
+    </offsets>
+
+  </model>
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m> 4.86910  </x-m>
+
+      <y-m> -1.325 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m> 4.86910  </x-m>
+
+      <y-m> -0.905 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m>  5.84480 </x-m>
+
+      <y-m> -1.325 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m>  5.84480 </x-m>
+
+      <y-m> -0.905 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m>  6.82050 </x-m>
+
+      <y-m> -1.325 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m>  6.82050 </x-m>
+
+      <y-m> -0.905 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m>  10.72330 </x-m>
+
+      <y-m> -1.325 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m>  10.72330 </x-m>
+
+      <y-m> -0.905 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m>  11.69900 </x-m>
+
+      <y-m> -1.325 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m>  11.69900 </x-m>
+
+      <y-m> -0.905 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m>  12.67470 </x-m>
+
+      <y-m> -1.225 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m>  12.67470 </x-m>
+
+      <y-m> -0.805 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+
+
+<!-- Here -->
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m> -7.09760 </x-m>
+
+      <y-m>  1.325 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m> -7.09760 </x-m>
+
+      <y-m>  0.905 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m> -6.12190 </x-m>
+
+      <y-m>  1.325 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m> -6.12190 </x-m>
+
+      <y-m>  0.905 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m> -5.14620 </x-m>
+
+      <y-m>  1.325 </y-m>
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m> -5.14620 </x-m>
+
+      <y-m>  0.905 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m> -4.17050 </x-m>
+
+      <y-m>  1.325 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m> -4.17050 </x-m>
+
+      <y-m>  0.905 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m> -0.98510 </x-m>
+
+      <y-m>  1.325 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m> -0.98510 </x-m>
+
+      <y-m>  0.905 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m> 0.00940 </x-m>
+
+      <y-m>  1.325 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m> 0.00940 </x-m>
+
+      <y-m>  0.905 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m> 0.96630 </x-m>
+
+      <y-m>  1.325 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m> 0.96630 </x-m>
+
+      <y-m>  0.905 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m> 1.94200 </x-m>
+
+      <y-m>  1.325 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m> 1.94200 </x-m>
+
+      <y-m>  0.905 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m> 2.91770 </x-m>
+
+      <y-m>  1.325 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m> 2.91770 </x-m>
+
+      <y-m>  0.905 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m> 3.89340 </x-m>
+
+      <y-m>  1.325 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m> 3.89340 </x-m>
+
+      <y-m>  0.905 </y-m>
+
+      <z-m> 0.28570 </z-m>
+    </offsets>
+
+  </model>
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m> 4.86910 </x-m>
+
+      <y-m>  1.325 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m> 4.86910 </x-m>
+
+      <y-m>  0.905 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m>  5.84480 </x-m>
+
+      <y-m>  1.325 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m>  5.84480 </x-m>
+
+      <y-m>  0.905 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m>  6.82050 </x-m>
+
+      <y-m>  1.325 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m>  6.82050 </x-m>
+
+      <y-m>  0.905 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m>  7.79620 </x-m>
+
+      <y-m>  1.325 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m>  7.79620 </x-m>
+
+      <y-m>  0.905 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m>  8.77190 </x-m>
+
+      <y-m>  1.325 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m>  8.77190 </x-m>
+
+      <y-m>  0.905 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m>  9.74760 </x-m>
+
+      <y-m>  1.325 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m>  9.74760 </x-m>
+
+      <y-m>  0.905 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m>  10.72330 </x-m>
+
+      <y-m>  1.325 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m>  10.72330 </x-m>
+
+      <y-m>  0.905 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m>  11.69900 </x-m>
+
+      <y-m>  1.325 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m>  11.69900 </x-m>
+
+      <y-m>  0.905 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m>  12.67470 </x-m>
+
+      <y-m>  1.225 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+  <model>
+
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+
+    <offsets>
+
+      <x-m>  12.67470 </x-m>
+
+      <y-m>  0.805 </y-m>
+
+      <z-m> 0.28570 </z-m>
+
+    </offsets>
+
+  </model>
+
+
+
+
+  <model>
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+    <offsets>
+      <x-m> -7.09760 </x-m>
+      <y-m> 0.485 </y-m>
+      <z-m> 0.28570 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+    <offsets>
+      <x-m> -6.12190 </x-m>
+      <y-m> 0.485 </y-m>
+      <z-m> 0.28570 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/seat.xml</path>
+    <offsets>
+      <x-m> -5.14620 </x-m>
+      <y-m> 0.485 </y-m>
+      <z-m> 0.28570 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/Lockheed-L-188/Models/Instruments/seats/Ubank.xml</path>
+    <offsets>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </offsets>
+  </model>
+</PropertyList>
+

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <key n="258">
+    <name>F2</name>
+    <desc>Propeller reverse lock</desc>
+    <binding>
+      <command>nasal</command>
+      <script>dc6b.toggle_reverse_lockout()</script>
+    </binding>
+  </key>
+
+  <key n="8">
+    <name>Backspace</name>
+    <desc>Engage Propeller reverse.</desc>
+    <binding>
+      <command>nasal</command>
+      <script>dc6b.toggle_prop_reverse()</script>
+    </binding>
+  </key>
+
+
+</PropertyList>

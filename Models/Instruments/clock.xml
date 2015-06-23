@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<!-- 86400 sec per day
+
+-->
+
+<path>clock.ac</path>
+
+    <animation>
+        <type>material</type>
+        <object-name>Clock.face</object-name>
+        <object-name>Hourhand</object-name>
+        <object-name>Minutehand</object-name>
+		<object-name>Sec.Hand</object-name>
+        <emission>
+            <red>0.8</red>
+            <green>0.4</green>
+            <blue>0.2</blue>
+            <factor-prop>/systems/electrical/outputs/instrument-lights-norm</factor-prop>
+        </emission>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>Hourhand</object-name>
+        <property>instrumentation/clock/indicated-sec</property>
+        <factor>0.00833333</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+        </center>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>Minutehand</object-name>
+        <property>/instrumentation/clock/indicated-sec</property>
+        <factor>0.1</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+        </center>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>Sec.Hand</object-name>
+        <property>/instrumentation/clock/indicated-sec</property>
+        <factor>6.0</factor>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+        </center>
+    </animation>
+
+
+<!-- Hotspots -->
+
+    <animation>
+        <type>pick</type>
+        <object-name>time.set</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>true</repeatable>
+            <interval-sec>0.1</interval-sec>
+            <binding>
+                <condition>
+                    <not>
+                        <property>devices/status/keyboard/shift</property>
+                    </not>
+                </condition>
+                <command>property-adjust</command>
+                <property>instrumentation/clock/offset-sec</property>
+                <step>60</step>
+                <min>-43200</min>
+                <max>43200</max>
+                <wrap>false</wrap>
+            </binding>
+            <binding>
+                <condition>
+                    <property>devices/status/keyboard/shift</property>
+                </condition>
+                <command>property-adjust</command>
+                <property>instrumentation/clock/offset-sec</property>
+                <step>600</step>
+                <min>-43200</min>
+                <max>43200</max>
+                <wrap>false</wrap>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>time.set</object-name>
+        <action>
+            <button>1</button>
+            <repeatable>true</repeatable>
+            <interval-sec>0.1</interval-sec>
+            <binding>
+                <condition>
+                    <not>
+                        <property>devices/status/keyboard/shift</property>
+                    </not>
+                </condition>
+                <command>property-adjust</command>
+                <property>instrumentation/clock/offset-sec</property>
+                <step>-60</step>
+                <min>-43200</min>
+                <max>43200</max>
+                <wrap>false</wrap>
+            </binding>
+            <binding>
+                <condition>
+                    <property>devices/status/keyboard/shift</property>
+                </condition>
+                <command>property-adjust</command>
+                <property>instrumentation/clock/offset-sec</property>
+                <step>-600</step>
+                <min>-43200</min>
+                <max>43200</max>
+                <wrap>false</wrap>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>time.set</object-name>
+        <action>
+            <button>3</button>
+            <binding>
+                <condition>
+                    <not>
+                        <property>devices/status/keyboard/shift</property>
+                    </not>
+                </condition>
+                <command>property-adjust</command>
+                <property>instrumentation/clock/offset-sec</property>
+                <step>60</step>
+                <min>-43200</min>
+                <max>43200</max>
+                <wrap>false</wrap>
+            </binding>
+            <binding>
+                <condition>
+                    <property>devices/status/keyboard/shift</property>
+                </condition>
+                <command>property-adjust</command>
+                <property>instrumentation/clock/offset-sec</property>
+                <step>600</step>
+                <min>-43200</min>
+                <max>43200</max>
+                <wrap>false</wrap>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>time.set</object-name>
+        <action>
+            <button>4</button>
+            <binding>
+                <condition>
+                    <not>
+                        <property>devices/status/keyboard/shift</property>
+                    </not>
+                </condition>
+                <command>property-adjust</command>
+                <property>instrumentation/clock/offset-sec</property>
+                <step>-60</step>
+                <min>-43200</min>
+                <max>43200</max>
+                <wrap>false</wrap>
+            </binding>
+            <binding>
+                <condition>
+                    <property>devices/status/keyboard/shift</property>
+                </condition>
+                <command>property-adjust</command>
+                <property>instrumentation/clock/offset-sec</property>
+                <step>-600</step>
+                <min>-43200</min>
+                <max>43200</max>
+                <wrap>false</wrap>
+            </binding>
+        </action>
+    </animation>
+
+</PropertyList>

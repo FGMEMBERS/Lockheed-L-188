@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<!-- specific ADF -->
+<adf n="0">
+  <mode>adf</mode>
+  <serviceable type="bool">true</serviceable>
+  <frequencies>
+    <selected-khz type="int">490</selected-khz>  <!-- NDB "DVI" (Donaueschingen) -->
+    <standby-khz type="int">401</standby-khz>    <!-- EDTM ancient military airbase -->
+  </frequencies>
+</adf>
+
+<adf n="1">
+  <mode>adf</mode>
+  <serviceable type="bool">true</serviceable>
+  <frequencies>
+    <selected-khz type="int">473</selected-khz>  <!-- EDNY near the lake of constance -->
+    <standby-khz type="int">442</standby-khz>    <!-- EDSN ancient military airbase -->
+  </frequencies>
+</adf>
+
+<terrain-warning>
+  <selector-ft>2000.0</selector-ft>
+</terrain-warning>
+
+<onmi-bearing-selector n="0">
+  <needles-pivot type="bool">false</needles-pivot>
+</onmi-bearing-selector>
+
+<onmi-bearing-selector n="1">
+  <needles-pivot type="bool">false</needles-pivot>
+</onmi-bearing-selector>
+
+<rmi-needle n="0">
+  <mode type="int">0</mode>
+</rmi-needle>
+<rmi-needle n="1">
+  <mode type="int">0</mode>
+</rmi-needle>
+
+<deviation-indicator>
+  <frequency type="int">0</frequency>
+</deviation-indicator>
+
+<marker-beacon>
+  <test type="int">0</test>
+</marker-beacon>
+
+<nav n="0">
+  <frequencies>
+    <display-sel-khz type="int">0</display-sel-khz>
+    <display-sel-mhz type="int">0</display-sel-mhz>
+    <selected-mhz-fmt type="string">114.85</selected-mhz-fmt>
+    <display-sby-khz type="int">0</display-sby-khz>
+    <display-sby-mhz type="int">0</display-sby-mhz>
+    <standby-mhz-fmt type="string">114.30</standby-mhz-fmt>
+</frequencies>
+</nav>
+<nav n="1">
+  <frequencies>
+    <display-sel-khz type="int">0</display-sel-khz>
+    <display-sel-mhz type="int">0</display-sel-mhz>
+    <selected-mhz-fmt type="string">110.05</selected-mhz-fmt>
+    <display-sby-khz type="int">0</display-sby-khz>
+    <display-sby-mhz type="int">0</display-sby-mhz>
+    <standby-mhz-fmt type="string">116.10</standby-mhz-fmt>
+  </frequencies>
+</nav>
+
+<comm n="0">
+  <frequencies>
+    <display-sel-khz type="int">0</display-sel-khz>
+    <display-sel-mhz type="int">0</display-sel-mhz>
+    <selected-mhz-fmt type="string">127.32</selected-mhz-fmt>
+    <display-sby-khz type="int">0</display-sby-khz>
+    <display-sby-mhz type="int">0</display-sby-mhz>
+    <standby-mhz-fmt type="string">118.10</standby-mhz-fmt>
+</frequencies>
+</comm>
+<comm n="1">
+  <frequencies>
+    <display-sel-khz type="int">0</display-sel-khz>
+    <display-sel-mhz type="int">0</display-sel-mhz>
+    <selected-mhz-fmt type="string">122.75</selected-mhz-fmt>
+    <display-sby-khz type="int">0</display-sby-khz>
+    <display-sby-mhz type="int">0</display-sby-mhz>
+    <standby-mhz-fmt type="string">122.75</standby-mhz-fmt>
+  </frequencies>
+</comm>
+
+<!-- Flightgear Rallye Watch  -->
+<frw>
+  <running type="bool">0</running>
+  <btn-mode type="bool">0</btn-mode>
+  <btn-reset type="bool">0</btn-reset>
+  <btn-start-stop type="bool">0</btn-start-stop>
+  <flight-time>
+    <start-time type="double">0</start-time>
+    <accu type="double">0</accu>
+    <total type="double">0</total>
+    <hours type="int">0</hours>
+    <minutes type="int">0</minutes>
+    <seconds type="int">0</seconds>
+  </flight-time>
+</frw>
+
+</PropertyList>
