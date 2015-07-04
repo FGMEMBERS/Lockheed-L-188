@@ -1270,7 +1270,7 @@
 
         <property>surface-positions/elevator-pos-norm</property>
 
-        <factor>-12</factor>
+        <factor>12</factor>
 
         <axis>
 
@@ -1311,7 +1311,7 @@
 
         <property>surface-positions/elevator-pos-norm</property>
 
-        <factor>12</factor>
+        <factor>-12</factor>
 
         <axis>
 
