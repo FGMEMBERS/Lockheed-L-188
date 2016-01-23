@@ -175,7 +175,7 @@ dirty stall 81 kts @ MLW ( 88,000 lbs)
 </propeller>
 
 <gear x="8.83209" y="0" z="-3.083" compression="0.3">
- <control-input axis="/controls/flight/rudder" control="STEER" square="true" src0="-1" src1="1.5" dst0="-1" dst1="1.5"//>
+ <control-input axis="/controls/flight/rudder" control="STEER" square="true" src0="-1" src1="1.5" dst0="-1" dst1="1.5"/>
   <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
   <control-speed control="EXTEND" transition-time="5"/>
   <control-output control="EXTEND" prop="/gear/gear[0]/position-norm"/>
