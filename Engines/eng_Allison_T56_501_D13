@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!--
+
+The Rolls Royce/Allison T56 501-D13 Series I Turboprop Engine.  First 
+
+Type: Axial flow prop-jet; constant rotating shaft at 13820 RPM with a reduction gear ratio of 13.54:1
+Variable pitch propeller: Hamilton Standard Model 43E60-6895B-8, 4 blades, 13.5 feet in diameter
+Diameter: 27 inches; 104cm
+Length: 124 inches; 371cm
+Compressor stages: 14
+Turbine stages: 4
+Weight: 1750 pounds; 747kg
+Fuel grade: Jet A
+Estimated Shaft Horse Power: 3750 @ 13820 RPM
+
+Sources: ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/19800005872.pdf; www.prop-liners.com/l188tech.htm
+
+Engine file created by David Waggoner (SkyBoat), January 2016.  This file is licensed under GPL3 and may be copied and modified at will as long as attribution is given to the original author.
+-->
+
+<turbine_engine name="Allison T56 501-D13">
+  <milthrust> 726 </milthrust>
+  <bypassratio>     9.2 </bypassratio>
+  <tsfc>            0.53 </tsfc> <!-- 1050 lbs per hour at FL200 based on "Standard Day" Calculation flying at 352 knots per hour-->
+  <bleed>           0.15</bleed>
+  <idlen1>        69.6 </idlen1>
+  <idlen2>        70.8 </idlen2>
+  <maxn1>         90.0 </maxn1>
+  <maxn2>         90.0 </maxn2>
+  <augmented>         0 </augmented>
+  <injected>          0 </injected>
+ 
+  <function name="IdleThrust">
+    <value>1.0</value>
+  </function>
+
+  <function name="MilThrust">
+    <value>1.0</value>
+  </function>
+
+
+</turbine_engine>
