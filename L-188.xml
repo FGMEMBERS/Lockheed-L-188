@@ -1,15 +1,31 @@
+<?xml version="1.0"?>
 <!-- 
-wingspan  35.8 m
-length 
-wing area 135.9 m2
 
-approach (full flap) 115 kt
-landing speed (full flap) 107 kt 
+	Allison 501-D13 Engines replace Pratt & Whitney 2800 Double Wasp Engines.  
+	 Type: Axial-flow prop-jet
+	 Weight: 1750 pounds (794 kg)
+	 Estimated Shaft Horse Power: 3750 @ 13,820 rpm
+	 Constant rotating engine (13820 RPM) with geared-down propellers, max RPM=1106
+	 Max Cruise Speed 324 kts (373 mph; 600 km/h)
+	 Max Speed (VNE) 364 kts (419 mph; 674 km/h)
 
-400 gph/2200 rpm max cruise speed
-dirty stall 81 kts @ MLW ( 88,000 lbs)
- MTOW 107000 lbs
--->
+	Wingspan  35.8 m; (99 feet, 8 inches)
+	Wing area 120.8 m2 (1300 ft2)
+	Length 31.85 m (104.5 ft)
+	Height 10.01 m (32.8 ft)
+
+	Approach (full flap) 115 kt
+	Landing speed (full flap) 107 kt 
+
+	Fuel Consumption: 400 gph/2200 rpm max cruise speed
+	Dirty stall 81 kts @ MLW ( 88,000 lbs)
+	Empty Weight 26,036kg (57,400lbs)
+	MTOW 51,256kg (113,000lbs)
+	Source: www.flugzeuginfo.net/acdata_php/l188_en.php
+
+	Engine Modifications by SkyBoat (David Waggoner), January 2016.
+  -->
+
 
 <airplane mass="55357">
 
@@ -113,66 +129,83 @@ dirty stall 81 kts @ MLW ( 88,000 lbs)
   <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm"/>
 </vstab>
 
-<!--  Pratt & Whitney R-2800   Double Wasp  -->
-<propeller x="2.881" y="8.08" z="0.265" moment="90" mass="2600" 
-  radius="1.98" cruise-power="2000" cruise-alt="20000"
-   min-rpm="1400" max-rpm="2800" cruise-speed="390" cruise-rpm="2200"
-   fine-stop="0.25" coarse-stop="4">
-    <piston-engine eng-rpm="2800" eng-power="2500"
-     displacement="2804" compression="6.75"
-     turbo-mul="2.5" wastegate-mp="60" turbo-lag="0.2"/>
-    <actionpt x="4.46" y="8.08" z="0.265"/>
-    <control-input control="THROTTLE" axis="/controls/engines/engine[0]/throttle"/>
-    <control-input control="STARTER" axis="/controls/engines/engine[0]/starter"/>
-    <control-input control="MAGNETOS" axis="/controls/engines/engine[0]/magnetos"/>
-    <control-input control="MIXTURE" axis="/controls/engines/engine[0]/mixture"/>
-    <control-input control="ADVANCE" axis="/controls/engines/engine[0]/propeller-pitch"/>
-</propeller>
+ 
+  <propeller x="3.746" y="3.855" z="-0.08"
+              mass="1750" 
+              moment="90" 
+              radius="1.98" 
+              max-rpm="1106"> 
+ 	     <turboprop-engine eng-rpm="1106"
+ 			eng-power="3750"
+			displacement= "2804"
+ 			compression="6.75"
+ 			turbo-mul="2.5" 
+ 			wastegate-mp="60">
+	     <actionpt x="4.46" y="8.08" z="0.265"/>
+     <control-input control="STARTER" axis="/controls/engines/engine[0]/starter"/>  
+     <!--<control-input control="MAGNETOS" axis="/controls/engines/engine[0]/magnetos"/>
+     <control-input control="MIXTURE" axis="/controls/engines/engine[0]/mixture"/> -->
+     <control-input control="ADVANCE" axis="/controls/engines/engine[0]/throttle"/>
+     <control-input control="ADVANCE" axis="/controls/engines/engine[0]/propeller-pitch"/>
+  </propeller>
 
-<propeller x="3.746" y="3.855" z="-0.08" moment="90" mass="2600" 
-  radius="1.98" cruise-power="2000" cruise-alt="20000"
-   min-rpm="1400" max-rpm="2800" cruise-speed="390" cruise-rpm="2200"
-   fine-stop="0.25" coarse-stop="4">
-    <piston-engine eng-rpm="2800" eng-power="2500"
-     displacement="2804" compression="6.75"
-     turbo-mul="2.5" wastegate-mp="60" turbo-lag="0.2"/>
-    <actionpt x="5.325" y="3.855" z="-0.08"/>
-    <control-input control="THROTTLE" axis="/controls/engines/engine[1]/throttle"/>
-    <control-input control="STARTER" axis="/controls/engines/engine[1]/starter"/>
-    <control-input control="MAGNETOS" axis="/controls/engines/engine[1]/magnetos"/>
-    <control-input control="MIXTURE" axis="/controls/engines/engine[1]/mixture"/>
-    <control-input control="ADVANCE" axis="/controls/engines/engine[1]/propeller-pitch"/>
-</propeller>
+  <propeller x="3.746" y="3.855" z="-0.08"
+              mass="1750" 
+              moment="90" 
+              radius="1.98" 
+              max-rpm="1106"> 
+ 	     <turboprop-engine eng-rpm="1106"
+ 			eng-power="3750"
+			displacement= "2804"
+ 			compression="6.75"
+ 			turbo-mul="2.5" 
+ 			wastegate-mp="60">
+	     <actionpt x="4.46" y="8.08" z="0.265"/>
+     <control-input control="STARTER" axis="/controls/engines/engine[1]/starter"/>
+     <!-- <control-input control="MAGNETOS" axis="/controls/engines/engine[1]/magnetos"/>
+     <control-input control="MIXTURE" axis="/controls/engines/engine[1]/mixture"/> -->
+     <control-input control="ADVANCE" axis="/controls/engines/engine[1]/throttle"/>
+     <control-input control="ADVANCE" axis="/controls/engines/engine[1]/propeller-pitch"/>
+  </propeller>
 
-<propeller x="3.746" y="-3.855" z="-0.08" moment="90" mass="2600" 
-  radius="1.98" cruise-power="2000" cruise-alt="20000"
-   min-rpm="1400" max-rpm="2800" cruise-speed="390" cruise-rpm="2200"
-   fine-stop="0.25" coarse-stop="4">
-    <piston-engine eng-rpm="2800" eng-power="2500"
-     displacement="2804" compression="6.75"
-     turbo-mul="2.5" wastegate-mp="60" turbo-lag="0.2"/>
-    <actionpt x="5.325" y="-3.855" z="-0.08"/>
-    <control-input control="THROTTLE" axis="/controls/engines/engine[2]/throttle"/>
-    <control-input control="STARTER" axis="/controls/engines/engine[2]/starter"/>
-    <control-input control="MAGNETOS" axis="/controls/engines/engine[2]/magnetos"/>
-    <control-input control="MIXTURE" axis="/controls/engines/engine[2]/mixture"/>
-    <control-input control="ADVANCE" axis="/controls/engines/engine[2]/propeller-pitch"/>
-</propeller>
+  <propeller x="3.746" y="3.855" z="-0.08"
+              mass="1750" 
+              moment="90" 
+              radius="1.98" 
+              max-rpm="1106"> 
+ 	     <turboprop-engine eng-rpm="1106"
+ 			eng-power="3750"
+			displacement= "2804"
+ 			compression="6.75"
+ 			turbo-mul="2.5" 
+ 			wastegate-mp="60">
+             <actionpt x="4.46" y="8.08" z="0.265"/>
+      <!--  <control-input control="MAGNETOS" axis="/controls/engines/engine[2]/magnetos"/>
+     <control-input control="MIXTURE" axis="/controls/engines/engine[2]/mixture"/> -->
+     <control-input control="STARTER" axis="/controls/engines/engine[2]/starter"/>
+     <control-input control="ADVANCE" axis="/controls/engines/engine[2]/throttle"/>
+     <control-input control="ADVANCE" axis="/controls/engines/engine[2]/propeller-pitch"/>
+  </propeller>
 
-<propeller x="2.881" y="-8.08" z="0.265" moment="90" mass="2600" 
-  radius="1.98" cruise-power="2000" cruise-alt="20000"
-   min-rpm="1400" max-rpm="2800" cruise-speed="390" cruise-rpm="2200"
-   fine-stop="0.25" coarse-stop="4">
-    <piston-engine eng-rpm="2800" eng-power="2500"
-     displacement="2804" compression="6.75"
-     turbo-mul="2.5" wastegate-mp="60" turbo-lag="0.2"/>
-    <actionpt x="4.46" y="-8.08" z="0.265"/>
-    <control-input control="THROTTLE" axis="/controls/engines/engine[3]/throttle"/>
-    <control-input control="STARTER" axis="/controls/engines/engine[3]/starter"/>
-    <control-input control="MAGNETOS" axis="/controls/engines/engine[3]/magnetos"/>
-    <control-input control="MIXTURE" axis="/controls/engines/engine[3]/mixture"/>
-    <control-input control="ADVANCE" axis="/controls/engines/engine[3]/propeller-pitch"/>
-</propeller>
+  <propeller x="3.746" y="3.855" z="-0.08"
+              mass="1750" 
+              moment="90" 
+              radius="1.98"
+              max-rpm="1106"/> 
+ 	     <turboprop-engine eng-rpm="1106"
+ 			eng-power="3750"
+			displacement= "2804"
+ 			compression="6.75"
+ 			turbo-mul="2.5" 
+ 			wastegate-mp="60">
+	     <actionpt x="4.46" y="8.08" z="0.265"/>
+     <control-input control="STARTER" axis="/controls/engines/engine[3]/starter"/>
+     <!-- <control-input control="MAGNETOS" axis="/controls/engines/engine[3]/magnetos"/>
+     <control-input control="MIXTURE" axis="/controls/engines/engine[3]/mixture"/> -->
+     <control-input control="ADVANCE" axis="/controls/engines/engine[3]/throttle"/>
+     <control-input control="ADVANCE" axis="/controls/engines/engine[3]/propeller-pitch"/>
+  </propeller>
+
 
 <gear x="8.83209" y="0" z="-3.083" compression="0.3">
  <control-input axis="/controls/flight/rudder" control="STEER" square="true" src0="-1" src1="1.5" dst0="-1" dst1="1.5"/>
