@@ -1,0 +1,864 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+<fx>
+
+<!-- Engine 1 -->
+    <crank>
+        <name>crank1</name>
+        <mode>looped</mode>
+        <path>Aircraft/Lockheed-L-188/Sounds/starter.wav</path>
+        <condition>
+            <property>/engines/engine[0]/cranking</property>
+            <not>
+                <property>/engines/engine[0]/running</property>
+            </not>
+        </condition>
+        <volume>
+            <property>/sim/sound/view-volume</property>
+        </volume>
+        <position><!-- +X = back / +Y = left / +Z = up-->
+            <x>-3.10</x>
+            <y>8.35</y>
+            <z>-0.3</z>
+        </position>
+        <reference-dist>5.0</reference-dist>
+        <max-dist>10.0</max-dist>
+    </crank>
+
+    <crank>
+        <name>cough1</name>
+        <path>Aircraft/Lockheed-L-188/Sounds/turbine_start.wav</path>
+        <property>/engines/engine[0]/running</property>
+        <volume>
+            <property>/sim/sound/view-volume</property>
+        </volume>
+        <position>
+            <x>-3.10</x>
+            <y>8.35</y>
+            <z>-0.3</z>
+        </position>
+        <reference-dist>20.0</reference-dist>
+        <max-dist>50.0</max-dist>
+    </crank>
+
+    <engine>
+        <name>engine1_idle</name>
+        <mode>looped</mode>
+        <path>Aircraft/Lockheed-L-188/Sounds/props_running_2.wav</path>
+        <condition>
+            <and>
+                <property>/engines/engine[0]/running</property>
+                <less-than>
+                    <property>/engines/engine[0]/rpm</property>
+                    <value>1000</value>
+                </less-than>
+            </and>
+        </condition>
+        <volume>
+            <property>/sim/sound/view-volume</property>
+        </volume>
+        <pitch>
+            <property>/engines/engine[0]/bmep</property>
+            <factor>0.004</factor>
+            <offset>0.5</offset>
+        </pitch>
+        <position>
+            <x>-3.10</x>
+            <y>8.35</y>
+            <z>-0.3</z>
+        </position>
+        <reference-dist>20.0</reference-dist>
+        <max-dist>50.0</max-dist>
+    </engine>
+
+    <engine>
+        <name>engine1_running</name>
+        <mode>looped</mode>
+        <path>Aircraft/Lockheed-L-188/Sounds/turboprop1.wav</path>
+        <condition>
+            <and>
+                <property>/engines/engine[0]/running</property>
+                <greater-than>
+                    <property>/engines/engine[0]/rpm</property>
+                    <value>999.999</value>
+                </greater-than>
+            </and>
+        </condition>
+        <volume>
+            <property>engines/engine[0]/bmep</property>
+            <factor>0.004</factor>
+            <offset>0.25</offset>
+        </volume>
+        <volume>
+            <property>/sim/sound/view-volume</property>
+        </volume>
+        <pitch>
+            <property>/engines/engine[0]/bmep</property>
+            <offset>0.4</offset>
+            <factor>0.0035</factor>
+        </pitch>
+        <position>
+            <x>-3.10</x>
+            <y>8.35</y>
+            <z>-0.3</z>
+        </position>
+        <reference-dist>150.0</reference-dist>
+        <max-dist>500.0</max-dist>
+    </engine>
+
+<!-- Engine 2 -->
+    <crank>
+        <name>crank2</name>
+        <mode>looped</mode>
+        <path>Aircraft/Lockheed-L-188/Sounds/starter.wav</path>
+        <condition>
+            <property>/engines/engine[1]/cranking</property>
+            <not>
+                <property>/engines/engine[1]/running</property>
+            </not>
+        </condition>
+        <volume>
+            <property>/sim/sound/view-volume</property>
+        </volume>
+        <position><!-- +X = back / +Y = left / +Z = up-->
+            <x>-3.87</x>
+            <y>3.88</y>
+            <z>-0.68</z>
+        </position>
+        <reference-dist>5.0</reference-dist>
+        <max-dist>10.0</max-dist>
+    </crank>
+
+    <crank>
+        <name>cough2</name>
+        <path>Aircraft/Lockheed-L-188/Sounds/turbine_start.wav</path>
+        <property>/engines/engine[1]/running</property>
+        <volume>
+            <property>/sim/sound/view-volume</property>
+        </volume>
+        <position>
+            <x>-3.87</x>
+            <y>3.88</y>
+            <z>-0.68</z>
+        </position>
+        <reference-dist>20.0</reference-dist>
+        <max-dist>50.0</max-dist>
+    </crank>
+
+    <engine>
+        <name>engine2_idle</name>
+        <mode>looped</mode>
+        <path>Aircraft/Lockheed-L-188/props_running_2.wav</path>
+        <condition>
+            <property>/engines/engine[1]/running</property>
+            <less-than>
+                <property>/engines/engine[1]/rpm</property>
+                <value>1000</value>
+            </less-than>
+        </condition>
+        <volume>
+            <property>/sim/sound/view-volume</property>
+        </volume>
+        <pitch>
+            <property>/engines/engine[1]/bmep</property>
+            <factor>0.004</factor>
+            <offset>0.5</offset>
+        </pitch>
+        <position>
+            <x>-3.87</x>
+            <y>3.88</y>
+            <z>-0.68</z>
+        </position>
+        <reference-dist>20.0</reference-dist>
+        <max-dist>50.0</max-dist>
+    </engine>
+
+    <engine>
+        <name>engine2_running</name>
+        <mode>looped</mode>
+        <path>Aircraft/Lockheed-L-188/Sounds/turboprop1.wav</path>
+        <condition>
+            <property>/engines/engine[1]/running</property>
+        </condition>
+        <volume>
+            <property>/engines/engine[1]/bmep</property>
+            <factor>0.004</factor>
+            <offset>0.25</offset>
+        </volume>
+        <volume>
+            <property>/sim/sound/view-volume</property>
+        </volume>
+        <pitch>
+            <property>/engines/engine[1]/bmep</property>
+            <offset>0.4</offset>
+            <factor>0.0035</factor>
+        </pitch>
+        <position>
+            <x>-3.87</x>
+            <y>3.88</y>
+            <z>-0.68</z>
+        </position>
+        <reference-dist>50.0</reference-dist>
+        <max-dist>200.0</max-dist>
+    </engine>
+
+<!-- Engine 3 -->
+    <crank>
+        <name>crank3</name>
+        <mode>looped</mode>
+        <path>Aircraft/Lockheed-L-188/Sounds/starter.wav</path>
+        <condition>
+            <property>/engines/engine[2]/cranking</property>
+            <not>
+                <property>/engines/engine[2]/running</property>
+            </not>
+        </condition>
+        <volume>
+            <property>/sim/sound/view-volume</property>
+        </volume>
+        <position><!-- +X = back / +Y = left / +Z = up-->
+            <x>-3.87</x>
+            <y>-3.88</y>
+            <z>-0.68</z>
+        </position>
+        <reference-dist>5.0</reference-dist>
+        <max-dist>10.0</max-dist>
+    </crank>
+
+    <crank>
+        <name>cough3</name>
+        <path>Aircraft/Lockheed-L-188/Sounds/turbine_start.wav</path>
+        <property>/engines/engine[2]/running</property>
+        <volume>
+            <property>/sim/sound/view-volume</property>
+        </volume>
+        <position>
+            <x>-3.87</x>
+            <y>-3.88</y>
+            <z>-0.68</z>
+        </position>
+        <reference-dist>20.0</reference-dist>
+        <max-dist>50.0</max-dist>
+    </crank>
+
+    <engine>
+        <name>engine3_idle</name>
+        <mode>looped</mode>
+        <path>Aircraft/Lockheed-L-188/Sounds/props_running_2.wav</path>
+        <condition>
+            <property>/engines/engine[2]/running</property>
+            <less-than>
+                <property>/engines/engine[2]/rpm</property>
+                <value>1000</value>
+            </less-than>
+        </condition>
+        <volume>
+            <property>/sim/sound/view-volume</property>
+        </volume>
+        <pitch>
+            <property>/engines/engine[2]/bmep</property>
+            <factor>0.004</factor>
+            <offset>0.5</offset>
+        </pitch>
+        <position>
+            <x>-3.87</x>
+            <y>-3.88</y>
+            <z>-0.68</z>
+        </position>
+        <reference-dist>20.0</reference-dist>
+        <max-dist>50.0</max-dist>
+    </engine>
+
+    <engine>
+        <name>engine3_running</name>
+        <mode>looped</mode>
+        <path>Aircraft/Lockheed-L-188/Sounds/turboprop1.wav</path>
+        <condition>
+            <property>/engines/engine[2]/running</property>
+        </condition>
+        <volume>
+            <property>/engines/engine[2]/bmep</property>
+            <factor>0.004</factor>
+            <offset>0.25</offset>
+        </volume>
+        <volume>
+            <property>/sim/sound/view-volume</property>
+        </volume>
+        <pitch>
+            <property>/engines/engine[2]/bmep</property>
+            <offset>0.4</offset>
+            <factor>0.0035</factor>
+        </pitch>
+        <position>
+            <x>-3.87</x>
+            <y>-3.88</y>
+            <z>-0.68</z>
+        </position>
+        <reference-dist>50.0</reference-dist>
+        <max-dist>200.0</max-dist>
+    </engine>
+
+<!-- Engine 4 -->
+    <crank>
+        <name>crank4</name>
+        <mode>looped</mode>
+        <path>Aircraft/Lockheed-L-188/Sounds/starter.wav</path>
+        <condition>
+            <property>/engines/engine[3]/cranking</property>
+            <not>
+                <property>/engines/engine[3]/running</property>
+            </not>
+        </condition>
+        <volume>
+            <property>/sim/sound/view-volume</property>
+        </volume>
+        <position><!-- +X = back / +Y = left / +Z = up-->
+            <x>-3.10</x>
+            <y>-8.35</y>
+            <z>-0.3</z>
+        </position>
+        <reference-dist>5.0</reference-dist>
+        <max-dist>10.0</max-dist>
+    </crank>
+
+    <crank>
+        <name>cough4</name>
+        <path>Aircraft/Lockheed-L-188/Sounds/turbine_start.wav</path>
+        <property>/engines/engine[3]/running</property>
+        <volume>
+            <property>/sim/sound/view-volume</property>
+        </volume>
+        <position>
+            <x>-3.10</x>
+            <y>-8.35</y>
+            <z>-0.3</z>
+        </position>
+        <reference-dist>20.0</reference-dist>
+        <max-dist>50.0</max-dist>
+    </crank>
+
+    <engine>
+        <name>engine4_idle</name>
+        <mode>looped</mode>
+        <path>Aircraft/Lockheed-L-188/Sounds/props_running_2.wav</path>
+        <condition>
+            <property>/engines/engine[3]/running</property>
+            <less-than>
+                <property>/engines/engine[3]/rpm</property>
+                <value>1000</value>
+            </less-than>
+        </condition>
+        <volume>
+            <property>/sim/sound/view-volume</property>
+        </volume>
+        <pitch>
+            <property>/engines/engine[3]/bmep</property>
+            <factor>0.004</factor>
+            <offset>0.5</offset>
+        </pitch>
+        <position>
+            <x>-3.10</x>
+            <y>-8.35</y>
+            <z>-0.3</z>
+        </position>
+        <reference-dist>20.0</reference-dist>
+        <max-dist>50.0</max-dist>
+    </engine>
+
+    <engine>
+        <name>engine4_running</name>
+        <mode>looped</mode>
+        <path>Aircraft/Lockheed-L-188/Sounds/turboprop1.wav</path>
+        <condition>
+            <property>/engines/engine[3]/running</property>
+        </condition>
+        <volume>
+            <property>/engines/engine[3]/bmep</property>
+            <factor>0.004</factor>
+            <offset>0.25</offset>
+        </volume>
+        <volume>
+            <property>/sim/sound/view-volume</property>
+        </volume>
+        <pitch>
+            <property>/engines/engine[3]/bmep</property>
+            <offset>0.4</offset>
+            <factor>0.0035</factor>
+        </pitch>
+        <position>
+            <x>-3.10</x>
+            <y>-8.35</y>
+            <z>-0.3</z>
+        </position>
+        <reference-dist>50.0</reference-dist>
+        <max-dist>200.0</max-dist>
+    </engine>
+
+    <rumble>
+        <name>rumble</name>
+        <mode>looped</mode>
+        <path>Sounds/rumble.wav</path>
+        <condition>
+            <or>
+                <property>/gear/gear[0]/wow</property>
+                <property>/gear/gear[1]/wow</property>
+                <property>/gear/gear[2]/wow</property>
+            </or>
+        </condition>
+        <volume>
+            <property>velocities/groundspeed-kt</property>
+            <factor>0.005</factor>
+        </volume>
+        <position>
+            <x>-9.0</x>
+            <y>0</y>
+            <z>-1.68</z>
+        </position>
+        <reference-dist>5.0</reference-dist>
+        <max-dist>10.0</max-dist>
+    </rumble>
+
+    <gear>
+        <name>gear</name>
+        <mode>in-transit</mode>
+        <path>Aircraft/Lockheed-L-188/Sounds/Trains.wav</path>
+        <property>/gear/gear[0]/position-norm</property>
+        <pitch>
+            <internal>dt_play</internal>
+            <offset>1.0</offset>
+            <factor>-0.001</factor>
+        </pitch>
+        <position>
+            <x>-9.0</x>
+            <y>0</y>
+            <z>-1.68</z>
+        </position>
+        <reference-dist>5.0</reference-dist>
+        <max-dist>10.0</max-dist>
+    </gear>
+
+    <gear>
+        <name>gear-lock</name>
+        <path>Aircraft/Lockheed-L-188/Sounds/lock.wav</path>
+        <condition>
+            <equals>
+                <property>/gear/gear[0]/position-norm</property>
+                <value>0</value>
+            </equals>
+        </condition>
+        <position>
+            <x>-9.0</x>
+            <y>0</y>
+            <z>-1.68</z>
+        </position>
+        <reference-dist>5.0</reference-dist>
+        <max-dist>10.0</max-dist>
+    </gear>
+
+    <squeal>
+        <name>squeal</name>
+        <path>Sounds/squeal.wav</path>
+        <condition>
+            <or>
+                <property>/gear/gear[0]/wow</property>
+                <property>/gear/gear[1]/wow</property>
+                <property>/gear/gear[2]/wow</property>
+            </or>
+        </condition>
+        <volume>
+            <property>velocities/speed-down-fps</property>
+            <factor>0.05</factor>
+        </volume>
+        <volume>
+            <property>velocities/airspeed-kt</property>
+            <factor>0.02</factor>
+        </volume>
+        <volume>
+            <internal>dt_stop</internal>
+            <factor>0.05</factor>
+            <max>1.0</max>
+        </volume>
+        <pitch>
+            <property>velocities/airspeed-kt</property>
+            <factor>0.0025</factor>
+            <offset>1.2</offset>
+        </pitch>
+        <position>
+            <x>-4.0</x>
+            <y>0</y>
+            <z>-3.8</z>
+        </position>
+        <reference-dist>20.0</reference-dist>
+        <max-dist>50.0</max-dist>
+    </squeal>
+
+    <flap>
+        <name>flaps</name>
+        <mode>in-transit</mode>
+        <path>Aircraft/Lockheed-L-188/Sounds/flap_move.wav</path>
+        <property>surface-positions/flap-pos-norm</property>
+        <volume>
+            <factor>0.5</factor>
+        </volume>
+        <position>
+            <x>-9.0</x>
+            <y>0</y>
+            <z>-1.68</z>
+        </position>
+        <reference-dist>10.0</reference-dist>
+        <max-dist>20.0</max-dist>
+    </flap>
+
+    <wind>
+        <name>wind</name>
+        <mode>looped</mode>
+        <path>Sounds/wind.wav</path>
+        <property>velocities/airspeed-kt</property>
+        <volume>
+            <property>velocities/airspeed-kt</property>
+            <factor>0.0015</factor>
+            <min>0.01</min>
+            <max>0.15</max>
+        </volume>
+        <pitch>
+            <property>velocities/airspeed-kt</property>
+            <factor>0.01</factor>
+            <offset>1.25</offset>
+        </pitch>
+        <position>
+            <x>-12.0</x>
+            <y>0</y>
+            <z>-0.6</z>
+        </position>
+        <reference-dist>0.5</reference-dist>
+        <max-dist>1.0</max-dist>
+    </wind>
+
+    <stall>
+        <name>stall</name>
+        <path>Aircraft/Lockheed-L-188/Sounds/stall_horn.wav</path>
+        <property>/sim/alarms/stall-warning</property>
+        <volume>
+            <property>velocities/airspeed-kt</property>
+            <min>30.0</min>
+        </volume>
+        <position>
+            <x>-10.0</x>
+            <y>0</y>
+            <z>-0.6</z>
+        </position>
+        <reference-dist>1.0</reference-dist>
+        <max-dist>2.0</max-dist>
+    </stall>
+
+
+  <brake>
+    <name>brake on</name>
+    <mode>once</mode>
+    <path>Aircraft/Lockheed-L-188/Sounds/squeal2.wav</path>
+    <condition>
+      <property>/controls/gear/brake-parking</property>
+    </condition>
+    <volume>
+      <offset>-0.9 </offset>
+    </volume>
+    <position>
+      <x> -0.5 </x>
+      <y>  0.0 </y>
+      <z>  0.0 </z>
+    </position>
+    <reference-dist> 3.0 </reference-dist>
+    <max-dist> 4.0 </max-dist>
+  </brake>
+
+  <brake>
+    <name>brake off</name>
+    <mode>once</mode>
+    <path>Aircraft/Lockheed-L-188/Sounds/squeal2.wav</path>
+    <condition>
+      <not>
+        <property>/controls/gear/brake-parking</property>
+      </not>
+    </condition>
+    <volume>
+      <offset>-0.9 </offset>
+    </volume>
+    <position>
+      <x> -0.5 </x>
+      <y>  0.0 </y>
+      <z>  0.0 </z>
+    </position>
+    <reference-dist> 3.0 </reference-dist>
+    <max-dist> 4.0 </max-dist>
+  </brake>
+
+
+
+      <click>
+       <name>click on</name>
+       <path>Aircraft/Lockheed-L-188/Sounds/click.wav</path>
+       <condition>
+        <property>/instrumentation/generic/click</property>
+       </condition>
+       <volume>
+        <max>0.2</max>
+       </volume>
+      </click>
+
+      <click>
+       <name>click off</name>
+       <path>Aircraft/Lockheed-L-188/Sounds/click.wav</path>
+       <condition>
+        <not>
+         <property>/instrumentation/generic/click</property>
+        </not>
+       </condition>
+       <volume>
+        <max>0.2</max>
+       </volume>
+      </click>
+      <switch>
+        <name>click1 on</name>
+        <mode>once</mode>
+        <path>Aircraft/Lockheed-L-188/Sounds/click.wav</path>
+        <condition>
+          <property>/sim/sound/switch1</property>
+        </condition>
+        <volume>
+          <offset> 1 </offset>
+        </volume>
+        <position>
+          <x> -0.5 </x>
+          <y>  0.0 </y>
+          <z>  0.0 </z>
+        </position>
+        <reference-dist> 2.0 </reference-dist>
+        <max-dist> 4.0 </max-dist>
+      </switch>
+
+      <switch>
+        <name>click1 off</name>
+        <mode>once</mode>
+        <path>Aircraft/Lockheed-L-188/Sounds/click.wav</path>
+        <condition>
+          <not>
+            <property>/sim/sound/switch1</property>
+          </not>
+        </condition>
+        <volume>
+          <offset> 1 </offset>
+        </volume>
+        <position>
+          <x> -0.5 </x>
+          <y>  0.0 </y>
+          <z>  0.0 </z>
+        </position>
+        <reference-dist> 2.0 </reference-dist>
+        <max-dist> 4.0 </max-dist>
+      </switch>
+
+      <switch>
+        <name>click2 on</name>
+        <mode>once</mode>
+        <path>Aircraft/Lockheed-L-188/Sounds/click2.wav</path>
+        <condition>
+          <property>/sim/sound/switch2</property>
+        </condition>
+        <volume>
+          <offset> 0.5 </offset>
+        </volume>
+        <position>
+          <x> -0.5 </x>
+          <y>  0.0 </y>
+          <z>  0.0 </z>
+        </position>
+        <reference-dist> 2.0 </reference-dist>
+        <max-dist> 4.0 </max-dist>
+      </switch>
+
+      <switch>
+        <name>click2 off</name>
+        <mode>once</mode>
+        <path>Aircraft/Lockheed-L-188/Sounds/click2.wav</path>
+        <condition>
+          <not>
+            <property>/sim/sound/switch2</property>
+          </not>
+        </condition>
+        <volume>
+          <offset> 0.5 </offset>
+        </volume>
+        <position>
+          <x> -0.5 </x>
+          <y>  0.0 </y>
+          <z>  0.0 </z>
+        </position>
+        <reference-dist> 2.0 </reference-dist>
+        <max-dist> 4.0 </max-dist>
+      </switch>
+
+      <switch>
+        <name>click3 on</name>
+        <mode>once</mode>
+        <path>Aircraft/Lockheed-L-188/Sounds/click3.wav</path>
+        <condition>
+          <property>/sim/sound/switch3</property>
+        </condition>
+        <volume>
+          <offset> 0.5 </offset>
+        </volume>
+        <position>
+          <x> -0.5 </x>
+          <y>  0.0 </y>
+          <z>  0.0 </z>
+        </position>
+        <reference-dist> 2.0 </reference-dist>
+        <max-dist> 4.0 </max-dist>
+      </switch>
+
+      <switch>
+        <name>click3 off</name>
+        <mode>once</mode>
+        <path>Aircraft/Lockheed-L-188/Sounds/click3.wav</path>
+        <condition>
+          <not>
+            <property>/sim/sound/switch3</property>
+          </not>
+        </condition>
+        <volume>
+          <offset> 0.5 </offset>
+        </volume>
+        <position>
+          <x> -0.5 </x>
+          <y>  0.0 </y>
+          <z>  0.0 </z>
+        </position>
+        <reference-dist> 2.0 </reference-dist>
+        <max-dist> 4.0 </max-dist>
+      </switch>
+
+      <switch>
+        <name>click4 on</name>
+        <mode>once</mode>
+        <path>Aircraft/Lockheed-L-188/Sounds/click4.wav</path>
+        <condition>
+          <property>/sim/sound/switch4</property>
+        </condition>
+        <volume>
+          <offset> 0.5 </offset>
+        </volume>
+        <position>
+          <x> -0.5 </x>
+          <y>  0.0 </y>
+          <z>  0.0 </z>
+        </position>
+        <reference-dist> 2.0 </reference-dist>
+        <max-dist> 4.0 </max-dist>
+      </switch>
+
+      <switch>
+        <name>click4 off</name>
+        <mode>once</mode>
+        <path>Aircraft/Lockheed-L-188/Sounds/click4.wav</path>
+        <condition>
+          <not>
+            <property>/sim/sound/switch4</property>
+          </not>
+        </condition>
+        <volume>
+          <offset> 0.5 </offset>
+        </volume>
+        <position>
+          <x> -0.5 </x>
+          <y>  0.0 </y>
+          <z>  0.0 </z>
+        </position>
+        <reference-dist> 2.0 </reference-dist>
+        <max-dist> 4.0 </max-dist>
+      </switch>
+
+      <switch>
+        <name>click5 on</name>
+        <mode>once</mode>
+        <path>Aircraft/Lockheed-L-188/Sounds/lock.wav</path>
+        <condition>
+            <property>/sim/sound/switch5</property>
+        </condition>
+        <volume>
+          <offset> 0.5 </offset>
+        </volume>
+        <position>
+          <x> -0.5 </x>
+          <y>  0.0 </y>
+          <z>  0.0 </z>
+        </position>
+        <reference-dist> 2.0 </reference-dist>
+        <max-dist> 4.0 </max-dist>
+      </switch>
+
+      <switch>
+        <name>click5 off</name>
+        <mode>once</mode>
+        <path>Aircraft/Lockheed-L-188/Sounds/lock.wav</path>
+        <condition>
+          <not>
+            <property>/sim/sound/switch5</property>
+          </not>
+        </condition>
+        <volume>
+          <offset> 0.5 </offset>
+        </volume>
+        <position>
+          <x> -0.5 </x>
+          <y>  0.0 </y>
+          <z>  0.0 </z>
+        </position>
+        <reference-dist> 2.0 </reference-dist>
+        <max-dist> 4.0 </max-dist>
+      </switch>
+
+      <switch>
+        <name>click6 on</name>
+        <mode>once</mode>
+        <path>Aircraft/Lockheed-L-188/Sounds/prop_pitch.wav</path>
+        <condition>
+            <property>/sim/sound/switch6</property>
+        </condition>
+        <volume>
+          <offset> 0.5 </offset>
+        </volume>
+        <position>
+          <x> -0.5 </x>
+          <y>  0.0 </y>
+          <z>  0.0 </z>
+        </position>
+        <reference-dist> 2.0 </reference-dist>
+        <max-dist> 4.0 </max-dist>
+      </switch>
+
+      <switch>
+        <name>click6 off</name>
+        <mode>once</mode>
+        <path>Aircraft/Lockheed-L-188/Sounds/prop_pitch.wav</path>
+        <condition>
+          <not>
+            <property>/sim/sound/switch6</property>
+          </not>
+        </condition>
+        <volume>
+          <offset> 0.5 </offset>
+        </volume>
+        <position>
+          <x> -0.5 </x>
+          <y>  0.0 </y>
+          <z>  0.0 </z>
+        </position>
+        <reference-dist> 2.0 </reference-dist>
+        <max-dist> 4.0 </max-dist>
+      </switch>
+
+
+
+</fx>
+</PropertyList>
