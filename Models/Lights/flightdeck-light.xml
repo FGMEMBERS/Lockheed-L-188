@@ -9,7 +9,7 @@
 		<nopreview/>
 	</animation>
 
-	<!-- Rembrand - Search light -->
+	<!-- Rembrandt - Search light -->
 	<animation>
 		<type>select</type>
 		<object-name>LightVolume1</object-name>

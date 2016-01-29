@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>hsi.ac</path>
+
+<animation>
+ <type>range</type>
+ <min-m>0</min-m>
+ <max-m>30</max-m>
+</animation>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>fond</object-name>
+    <object-name>buttonCRS</object-name>
+    <object-name>buttonHDG</object-name>
+    <object-name>back</object-name>
+    <object-name>cmpscard</object-name>
+    <object-name>crs01</object-name>
+    <object-name>crs02</object-name>
+    <object-name>crs03</object-name>
+    <object-name>dist01</object-name>
+    <object-name>dist02</object-name>
+    <object-name>dist03</object-name>
+    <object-name>dist04</object-name>
+    <object-name>HDGneedle</object-name>
+    <object-name>HDGneedle2</object-name>
+    <object-name>bearing-bug</object-name>
+    <object-name>heading-bug</object-name>
+    <object-name>GSpointer</object-name>
+    <object-name>cache</object-name>
+    <object-name>off-flag</object-name>
+
+    <!-- Objets transparents -->
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>back</object-name>
+    <object-name>cmpscard</object-name>
+    <object-name>crs01</object-name>
+    <object-name>crs02</object-name>
+    <object-name>crs03</object-name>
+    <object-name>dist01</object-name>
+    <object-name>dist02</object-name>
+    <object-name>dist03</object-name>
+    <object-name>dist04</object-name>
+    <object-name>HDGneedle</object-name>
+    <object-name>HDGneedle2</object-name>
+    <object-name>bearing-bug</object-name>
+    <object-name>heading-bug</object-name>
+    <object-name>GSpointer</object-name>
+    <object-name>cache</object-name>
+    <object-name>off-flag</object-name>
+    <emission>
+      <red>   0.8 </red>
+      <green> 0.7 </green>
+      <blue>  0.5 </blue>
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+    </emission>
+  </animation>
+
+  <!-- tacan distance digital display -->
+  <animation>
+    <type>textranslate</type>
+    <object-name>dist01</object-name>
+    <property>instrumentation/tacan/indicated-distance-nm</property>
+    <!-- <property>/instrumentation/navcomputer/indicated-distance-nm</property> -->
+    <factor>0.0005</factor>
+    <step>100</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>dist02</object-name>
+    <property>instrumentation/tacan/indicated-distance-nm</property>
+    <!-- <property>/instrumentation/navcomputer/indicated-distance-nm</property> -->
+    <factor>0.005</factor>
+    <step>10</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>dist03</object-name>
+    <property>instrumentation/tacan/indicated-distance-nm</property>
+    <!-- <property>/instrumentation/navcomputer/indicated-distance-nm</property> -->
+    <factor>0.05</factor>
+    <step>1</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>dist04</object-name>
+    <property>instrumentation/tacan/indicated-distance-nm</property>
+    <!-- <property>/instrumentation/navcomputer/indicated-distance-nm</property> -->
+    <factor>1</factor>
+    <step>0.1</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- Course Readout -->
+  <animation>
+    <type>textranslate</type>
+    <object-name>crs01</object-name>
+    <property>instrumentation/nav[0]/radials/selected-deg</property>
+    <factor>0.0005</factor>
+    <step>100</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>crs02</object-name>
+    <property>instrumentation/nav[0]/radials/selected-deg</property>
+    <factor>0.005</factor>
+    <step>10</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>crs03</object-name>
+    <property>instrumentation/nav[0]/radials/selected-deg</property>
+    <factor>0.05</factor>
+    <step>1</step>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>cmpscard</object-name>
+    <condition>
+      <greater-than>
+        <property>systems/electrical/outputs/hsi</property>
+        <value type="float">24</value>
+      </greater-than>
+    </condition>
+    <property>instrumentation/heading-indicator/indicated-heading-deg</property>
+    <!-- <property>/orientation/heading-magnetic-deg[0]</property> -->
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+    <center>
+      <x> 0.000 </x>
+      <y> 0.000 </y>
+      <y> 0.003 </y>
+    </center>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>HDGneedle</object-name>
+    <object-name>HDGneedle2</object-name>
+    <object-name>heading-bug</object-name>
+    <property>orientation/heading-deg</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>heading-bug</object-name>
+    <condition>
+      <greater-than>
+        <property>systems/electrical/outputs/hsi</property>
+        <value>24</value>
+      </greater-than>
+    </condition>
+      <property>autopilot/settings/heading-bug-deg</property>
+      <axis>
+        <x> -1 </x>
+        <y>  0 </y>
+        <z>  0 </z>
+      </axis>
+  </animation>
+
+  <!--<animation>
+    <type>rotate</type>
+    <object-name>bearing-bug</object-name>
+    <condition>
+      <greater-than>
+        <property>systems/electrical/outputs/hsi</property>
+        <value>24</value>
+      </greater-than>
+    </condition>
+    <property>autopilot/settings/heading-bug-deg</property>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>-->
+
+  <animation>
+    <type>select</type>
+    <object-name>cache</object-name>
+    <condition>
+      <or>
+        <equals>
+          <property>instrumentation/tacan/in-range</property>
+          <value>false</value>
+        </equals>
+        <equals>
+          <property>instrumentation/tacan/switch-position</property>
+          <value>0</value>
+        </equals>
+      </or>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>off-flag</object-name>
+    <condition>
+      <less-than>
+        <property>systems/electrical/outputs/hsi</property>
+        <value type="float">24</value>
+      </less-than>
+    </condition>
+  </animation>
+
+<!-- tacan display -->
+
+  <animation>
+    <type>rotate</type>
+    <object-name>bearing-bug</object-name>
+    <property>orientation/heading-deg</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+<animation>
+   <type>rotate</type>
+   <object-name>bearing-bug</object-name>
+   <property>instrumentation/tacan/indicated-bearing-true-deg</property>
+   <axis>
+      <x>-1</x>
+      <y>0</y>
+      <z>0</z>
+   </axis>
+
+</animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>HDGneedle</object-name>
+    <object-name>HDGneedle2</object-name>
+    <property>instrumentation/nav/radials/selected-deg</property>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>HDGneedle2</object-name>
+    <property>instrumentation/nav/heading-needle-deflection</property>
+    <interpolation>
+      <entry><ind> -10 </ind><dep> -0.0253 </dep></entry>
+      <entry><ind>   0 </ind><dep>  0.0000 </dep></entry>
+      <entry><ind>  10 </ind><dep>  0.0253 </dep></entry>
+    </interpolation>
+    <!--<factor>0.002</factor>-->
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>GSpointer</object-name>
+    <property>instrumentation/nav/gs-needle-deflection</property>
+    <interpolation>
+      <entry><ind> -9 </ind><dep> -0.03 </dep></entry>
+      <entry><ind>  0 </ind><dep>  0.00 </dep></entry>
+      <entry><ind>  9 </ind><dep>  0.03 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>GSpointer</object-name>
+    <condition>
+      <and>
+         <property>instrumentation/nav/has-gs</property>
+         <property>instrumentation/nav/in-range</property>
+     </and>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>buttonCRS</object-name>
+    <property>instrumentation/nav[0]/radials/selected-deg</property>
+    <center>
+      <x-m>  0.007 </x-m>
+      <y-m> -0.048 </y-m>
+      <z-m> -0.050 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+   <type>rotate</type>
+   <object-name>buttonHDG</object-name>
+   <property>instrumentation/heading-indicator/offset-deg</property>
+   <center>
+      <x-m>  0.007 </x-m>
+      <y-m> -0.048 </y-m>
+      <z-m> -0.050 </z-m>
+   </center>
+   <axis>
+     <x> -1 </x>
+     <y>  0 </y>
+     <z>  0 </z>
+   </axis>
+  </animation>
+
+</PropertyList>
+

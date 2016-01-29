@@ -28,7 +28,7 @@
 
     <crank>
         <name>cough1</name>
-        <path>Aircraft/Lockheed-L-188/Sounds/startup.wav</path>
+        <path>Aircraft/Lockheed-L-188/Sounds/turbine_start.wav</path>
         <property>/engines/engine[0]/running</property>
         <volume>
             <property>/sim/sound/view-volume</property>
@@ -45,7 +45,7 @@
     <engine>
         <name>engine1_idle</name>
         <mode>looped</mode>
-        <path>Aircraft/Lockheed-L-188/Sounds/idle.wav</path>
+        <path>Aircraft/Lockheed-L-188/Sounds/props_running_2.wav</path>
         <condition>
             <and>
                 <property>/engines/engine[0]/running</property>
@@ -75,7 +75,7 @@
     <engine>
         <name>engine1_running</name>
         <mode>looped</mode>
-        <path>Aircraft/Lockheed-L-188/Sounds/doublewasp.wav</path>
+        <path>Aircraft/Lockheed-L-188/Sounds/turboprop1.wav</path>
         <condition>
             <and>
                 <property>/engines/engine[0]/running</property>
@@ -132,7 +132,7 @@
 
     <crank>
         <name>cough2</name>
-        <path>Aircraft/Lockheed-L-188/Sounds/startup.wav</path>
+        <path>Aircraft/Lockheed-L-188/Sounds/turbine_start.wav</path>
         <property>/engines/engine[1]/running</property>
         <volume>
             <property>/sim/sound/view-volume</property>
@@ -149,7 +149,7 @@
     <engine>
         <name>engine2_idle</name>
         <mode>looped</mode>
-        <path>Aircraft/Lockheed-L-188/Sounds/idle.wav</path>
+        <path>Aircraft/Lockheed-L-188/props_running_2.wav</path>
         <condition>
             <property>/engines/engine[1]/running</property>
             <less-than>
@@ -177,7 +177,7 @@
     <engine>
         <name>engine2_running</name>
         <mode>looped</mode>
-        <path>Aircraft/Lockheed-L-188/Sounds/doublewasp.wav</path>
+        <path>Aircraft/Lockheed-L-188/Sounds/turboprop1.wav</path>
         <condition>
             <property>/engines/engine[1]/running</property>
         </condition>
@@ -228,7 +228,7 @@
 
     <crank>
         <name>cough3</name>
-        <path>Aircraft/Lockheed-L-188/Sounds/startup.wav</path>
+        <path>Aircraft/Lockheed-L-188/Sounds/turbine_start.wav</path>
         <property>/engines/engine[2]/running</property>
         <volume>
             <property>/sim/sound/view-volume</property>
@@ -245,7 +245,7 @@
     <engine>
         <name>engine3_idle</name>
         <mode>looped</mode>
-        <path>Aircraft/Lockheed-L-188/Sounds/idle.wav</path>
+        <path>Aircraft/Lockheed-L-188/Sounds/props_running_2.wav</path>
         <condition>
             <property>/engines/engine[2]/running</property>
             <less-than>
@@ -273,7 +273,7 @@
     <engine>
         <name>engine3_running</name>
         <mode>looped</mode>
-        <path>Aircraft/Lockheed-L-188/Sounds/doublewasp.wav</path>
+        <path>Aircraft/Lockheed-L-188/Sounds/turboprop1.wav</path>
         <condition>
             <property>/engines/engine[2]/running</property>
         </condition>
@@ -324,7 +324,7 @@
 
     <crank>
         <name>cough4</name>
-        <path>Aircraft/Lockheed-L-188/Sounds/startup.wav</path>
+        <path>Aircraft/Lockheed-L-188/Sounds/turbine_start.wav</path>
         <property>/engines/engine[3]/running</property>
         <volume>
             <property>/sim/sound/view-volume</property>
@@ -341,7 +341,7 @@
     <engine>
         <name>engine4_idle</name>
         <mode>looped</mode>
-        <path>Aircraft/Lockheed-L-188/Sounds/idle.wav</path>
+        <path>Aircraft/Lockheed-L-188/Sounds/props_running_2.wav</path>
         <condition>
             <property>/engines/engine[3]/running</property>
             <less-than>
@@ -369,7 +369,7 @@
     <engine>
         <name>engine4_running</name>
         <mode>looped</mode>
-        <path>Aircraft/Lockheed-L-188/Sounds/doublewasp.wav</path>
+        <path>Aircraft/Lockheed-L-188/Sounds/turboprop1.wav</path>
         <condition>
             <property>/engines/engine[3]/running</property>
         </condition>

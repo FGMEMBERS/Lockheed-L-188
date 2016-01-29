@@ -1,0 +1,64 @@
+<PropertyList>
+
+<path>vor-ind.ac</path>
+
+    <animation>
+        <type>select</type>
+        <object-name>VOR.to-flag</object-name>
+        <condition>
+			<property>instrumentation/nav/to-flag</property>
+		</condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>VOR.off</object-name>
+        <condition>
+			<not>
+				<property>instrumentation/nav/in-range</property>
+			</not>
+		</condition>
+    </animation>
+
+
+    <animation>
+        <type>rotate</type>
+        <object-name>vor.needle</object-name>
+        <property>instrumentation/nav/heading-needle-deflection</property>
+        <interpolation>
+            <entry><ind>-10.0</ind><dep>-39</dep></entry>
+            <entry><ind>10.0</ind><dep>39</dep></entry>
+        </interpolation>
+        <center>
+            <x-m>0</x-m>
+            <y-m>0.0</y-m>
+            <z-m>0.020</z-m>
+        </center>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>gs.needle</object-name>
+        <property>instrumentation/nav/gs-needle-deflection</property>
+        <interpolation>
+            <entry><ind>-2.5</ind><dep>-39</dep></entry>
+            <entry><ind>2.5</ind><dep>39</dep></entry>
+        </interpolation>
+        <center>
+            <x-m>0</x-m>
+            <y-m>-0.020</y-m>
+            <z-m>0</z-m>
+        </center>
+        <axis>
+            <x>1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+</PropertyList>

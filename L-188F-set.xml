@@ -255,11 +255,13 @@
     </consumables>
 
 <instrumentation include="Systems/Lockheed-L-188-init-instrumentation.xml"/>
+<instrumentation include="Systems/dc6-instumentation.xml"/>
 
 <nasal>
     <L-188>
         <file>Aircraft/Lockheed-L-188/Nasal/L188F.nas</file>
-        <file>Aircraft/Lockheed-L-188/Nasal/doors.nas</file>        <file>Aircraft/Lockheed-L-188/Nasal/Electrical.nas</file>
+        <file>Aircraft/Lockheed-L-188/Nasal/doors.nas</file>        
+	<file>Aircraft/Lockheed-L-188/Nasal/Electrical.nas</file>
         <file>Aircraft/Lockheed-L-188/Nasal/dc6-mk-prop-rev.nas</file>   
         <file>Aircraft/Lockheed-L-188/Nasal/mk-ki266.nas</file>
         <script><![CDATA[
@@ -270,9 +272,12 @@
         <file>Aircraft/Lockheed-L-188/Nasal/mk-swap-nav.nas</file>
         <file>Aircraft/Lockheed-L-188/Nasal/mk-rmi-adf-nav.nas</file>
         <file>Aircraft/Lockheed-L-188/Nasal/mk-frw.nas</file>
-    </L-188>
+        <file>Aircraft/Lockheed-L-188/Nasal/RDR160.nas</file>
+    </L-188>  
+    <m877>
+	<file>Aircraft/Instruments-3d/clock/m877/M877.nas</file>
+    </m877>
 
-   
 </nasal>
 
 </PropertyList>

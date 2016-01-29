@@ -5,7 +5,7 @@
     <sim>
 
         <description>Lockheed L-188A Electra (YASim)</description>
-        <author>niltondc (3D Model), Martien van der Plas</author>
+        <author>niltondc (3D Model), Martien van der Plas; David Waggoner: Engine eplacement to the correct Allison turboprop engines and Flightdeck instrument installation</author>
         <aircraft-version>1.0.0</aircraft-version>
         <flight-model>yasim</flight-model>
         <aero>L-188</aero>
@@ -44,6 +44,8 @@
         <instrumentation>
           <path>Aircraft/Lockheed-L-188/Systems/dc6-instrumentation.xml</path>
         </instrumentation>
+
+	
 
 
         <view>
@@ -259,7 +261,8 @@
 <nasal>
     <L-188>
         <file>Aircraft/Lockheed-L-188/Nasal/L188.nas</file>
-        <file>Aircraft/Lockheed-L-188/Nasal/doors.nas</file>        <file>Aircraft/Lockheed-L-188/Nasal/Electrical.nas</file>
+        <file>Aircraft/Lockheed-L-188/Nasal/doors.nas</file>        
+	<file>Aircraft/Lockheed-L-188/Nasal/Electrical.nas</file>
         <file>Aircraft/Lockheed-L-188/Nasal/dc6-mk-prop-rev.nas</file>   
         <file>Aircraft/Lockheed-L-188/Nasal/mk-ki266.nas</file>
         <script><![CDATA[
@@ -270,9 +273,10 @@
         <file>Aircraft/Lockheed-L-188/Nasal/mk-swap-nav.nas</file>
         <file>Aircraft/Lockheed-L-188/Nasal/mk-rmi-adf-nav.nas</file>
         <file>Aircraft/Lockheed-L-188/Nasal/mk-frw.nas</file>
-    </L-188>
-
-   
+	<file>Aircraft/Lockheed-L-188/Nasal/RDR160.nas</file>
+    </L-188>  
+    <m877>
+       <file>Aircraft/Instruments-3d/clock/M877/M877.nas</file>
+   </m877>   
 </nasal>
-
 </PropertyList>

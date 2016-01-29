@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<PropertyList>
+
+	<path>asi.ac</path>
+
+	<params>
+		<indicated-speed-kt>instrumentation/airspeed-indicator/indicated-speed-kt</indicated-speed-kt>
+		<indicated-mach>instrumentation/airspeed-indicator/indicated-mach</indicated-mach>
+	</params>
+
+<!--	<animation>
+		<type>material</type>
+		<emission>
+			<red>1</red>
+			<green>0.8</green>
+			<blue>0.5</blue>
+			<factor-prop>controls/lighting/instruments-norm</factor-prop>
+		</emission>
+	</animation>-->
+
+	<animation>
+		<type>rotate</type>
+		<object-name>Needle</object-name>
+		<property alias="../../params/indicated-speed-kt" />
+		<interpolation>
+			<entry><ind>0</ind><dep>9.5</dep></entry>
+			<entry><ind>60</ind><dep>0</dep></entry>
+			<entry><ind>250</ind><dep>-244</dep></entry>
+			<entry><ind>300</ind><dep>-265.5</dep></entry>
+			<entry><ind>450</ind><dep>-331</dep></entry>
+		</interpolation>
+		<axis>
+			<x>1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>textranslate</type>
+		<object-name>Mach.1</object-name>
+		<property alias="../../params/indicated-mach" />
+		<step>0.1</step>
+		<scroll>0.01</scroll>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+		</axis>
+	</animation>
+	<animation>
+		<type>textranslate</type>
+		<object-name>Mach.01</object-name>
+		<property alias="../../params/indicated-mach" />
+		<factor>10</factor>
+		<step>0.01</step>
+		<scroll>0.001</scroll>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+		</axis>
+	</animation>
+	<animation>
+		<type>textranslate</type>
+		<object-name>Mach.001</object-name>
+		<property alias="../../params/indicated-mach" />
+		<factor>100</factor>
+		<step>0.001</step>
+		<scroll>0.0001</scroll>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+		</axis>
+	</animation>
+
+</PropertyList>

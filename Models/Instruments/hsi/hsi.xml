@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>hsi.ac</path>
+
+  <animation>
+    <object-name>HSI.fond</object-name>
+    <object-name>HSI.face</object-name>
+    <object-name>HSI.hdgminus</object-name>
+    <object-name>HSI.hdg-bug</object-name>
+    <object-name>HSI.hdgplus</object-name>
+    <object-name>HSI.crsminus</object-name>
+    <object-name>HSI.crs-knob</object-name>
+    <object-name>HSI.crsplus</object-name>
+    <object-name>HSI.card</object-name>
+    <object-name>HSI.rng0</object-name>
+    <object-name>HSI.rng1</object-name>
+    <object-name>HSI.rng2</object-name>
+    <object-name>HSI.rng3</object-name>
+    <object-name>HSI.point</object-name>
+    <object-name>HSI.crs0</object-name>
+    <object-name>HSI.crs1</object-name>
+    <object-name>HSI.crs2</object-name>
+    <object-name>HSI.CRS.needle</object-name>
+    <object-name>HSI.CRS.deflection</object-name>
+    
+    <object-name>HSI.vitre</object-name>
+  </animation>
+
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>HSI.vitre</object-name>
+  </effect>
+ 
+  <animation>
+    <type>material</type>
+    <object-name>HSI.card</object-name>
+    <object-name>HSI.hdg-knob</object-name>
+    <object-name>HSI.crs-knob</object-name>
+    <object-name>HSI.rng0</object-name>
+    <object-name>HSI.rng1</object-name>
+    <object-name>HSI.rng2</object-name>
+    <object-name>HSI.rng3</object-name>
+    <object-name>HSI.crs0</object-name>
+    <object-name>HSI.crs1</object-name>
+    <object-name>HSI.crs2</object-name>
+    <object-name>HSI.hdg-bug</object-name>
+    <object-name>HSI.CRS.needle</object-name>
+    <object-name>HSI.CRS.deflection</object-name>
+    <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>HSI.crs-knob</object-name>
+    <property>instrumentation/nav/radials/selected-deg</property>
+    <factor> 5 </factor>
+    <center>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.042 </y-m>
+      <z-m> -0.035 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>HSI.hdg-knob</object-name>
+    <property>autopilot/settings/heading-bug-deg</property>
+    <factor> 5 </factor>
+    <center>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.042 </y-m>
+      <z-m> -0.035 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>HSI.card</object-name>
+    <object-name>HSI.CRS.needle</object-name>
+    <object-name>HSI.CRS.deflection</object-name>
+    <property>orientation/heading-magnetic-deg</property>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>HSI.hdg-bug</object-name>
+    <property>autopilot/internal/fdm-heading-bug-error-deg</property>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>HSI.CRS.needle</object-name>
+    <object-name>HSI.CRS.deflection</object-name>
+    <property>instrumentation/nav/radials/selected-deg</property>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>HSI.CRS.deflection</object-name>
+    <property>instrumentation/nav/heading-needle-deflection</property>
+    <factor> 0.00150 </factor>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- RANGE digits-->
+  <animation>
+    <type>textranslate</type>
+    <object-name>HSI.rng0</object-name>
+    <property>instrumentation/dme/indicated-distance-nm</property>
+    <factor> 0.001 </factor>
+    <step> 100 </step>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>HSI.rng1</object-name>
+    <property>instrumentation/dme/indicated-distance-nm</property>
+    <factor> 0.01 </factor>
+    <step> 10 </step>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>HSI.rng2</object-name>
+    <property>instrumentation/dme/indicated-distance-nm</property>
+    <factor> 0.1 </factor>
+    <step> 1 </step>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>HSI.rng3</object-name>
+    <property>instrumentation/dme/indicated-distance-nm</property>
+    <factor> 1 </factor>
+    <step> 0.1 </step>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- COURSE digits-->
+  <animation>
+    <type>textranslate</type>
+    <object-name>HSI.crs0</object-name>
+    <property>instrumentation/nav/radials/selected-deg</property>
+    <factor> 0.001 </factor>
+    <step> 100 </step>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>HSI.crs1</object-name>
+    <property>instrumentation/nav/radials/selected-deg</property>
+    <factor> 0.01 </factor>
+    <step> 10 </step>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>HSI.crs2</object-name>
+    <property>instrumentation/nav/radials/selected-deg</property>
+    <factor> 0.1 </factor>
+    <step> 1 </step>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- Hotspots -->
+  <!-- Nav Course-->
+  <animation>
+    <type>pick</type>
+    <object-name>HSI.crsminus</object-name>
+    <visible>0</visible>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/nav/radials/selected-deg</property>
+        <step>-1</step>
+        <min>0</min>
+        <max>360</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>HSI.crsminus</object-name>
+    <visible>0</visible>
+    <action>
+      <button>1</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/nav/radials/selected-deg</property>
+        <step>-10</step>
+        <min>0</min>
+        <max>360</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>HSI.crsplus</object-name>
+    <visible>0</visible>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/nav/radials/selected-deg</property>
+        <step>1</step>
+        <min>0</min>
+        <max>360</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>HSI.crsplus</object-name>
+    <visible>0</visible>
+    <action>
+      <button>1</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/nav/radials/selected-deg</property>
+        <step>10</step>
+        <min>0</min>
+        <max>360</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+  </animation>
+  
+  <!-- HDG bug-->
+  <animation>
+    <type>pick</type>
+    <object-name>HSI.hdgminus</object-name>
+    <visible>0</visible>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>autopilot/settings/heading-bug-deg</property>
+        <step>-1</step>
+        <min>0</min>
+        <max>360</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>HSI.hdgminus</object-name>
+    <visible>0</visible>
+    <action>
+      <button>1</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>autopilot/settings/heading-bug-deg</property>
+        <step>-10</step>
+        <min>0</min>
+        <max>360</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>HSI.hdgplus</object-name>
+    <visible>0</visible>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>autopilot/settings/heading-bug-deg</property>
+        <step>1</step>
+        <min>0</min>
+        <max>360</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>HSI.hdgplus</object-name>
+    <visible>0</visible>
+    <action>
+      <button>1</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>autopilot/settings/heading-bug-deg</property>
+        <step>10</step>
+        <min>0</min>
+        <max>360</max>
+        <wrap>1</wrap>
+      </binding>
+    </action>
+  </animation>
+
+</PropertyList>

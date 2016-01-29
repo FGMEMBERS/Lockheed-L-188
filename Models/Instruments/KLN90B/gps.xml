@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+
+<!--
+Honeywell Bendix/King KLN-90B GPS
+-->
+
+<PropertyList>
+
+    <name>KLN-90B</name>
+    <background>Aircraft/b1900d/Models/Instruments/KLN90B/transparent-bg.png</background>
+    <w>400</w>
+    <h>142</h>
+
+    <instruments>
+
+        <instrument include="display.xml">
+            <name>Display</name>
+            <x>200</x>
+            <y>71</y>
+            <w>400</w>
+            <h>142</h>
+        </instrument>
+
+        <instrument include="supernav1.xml">
+            <condition>
+                <property>instrumentation/gps-annunciator/super-nav</property>
+            </condition>
+            <name>supernav</name>
+            <x>150</x>
+            <y>71</y>
+            <w>300</w>
+            <h>142</h>
+        </instrument>
+
+        <instrument include="lhtext.xml">
+            <condition>
+                <not>
+                    <property>instrumentation/gps-annunciator/super-nav</property>
+                </not>
+            </condition>
+            <name>lh text</name>
+            <x>100</x>
+            <y>71</y>
+            <w>200</w>
+            <h>142</h>
+        </instrument>
+
+        <instrument include="rhtext.xml">
+            <condition>
+                <not>
+                    <property>instrumentation/gps-annunciator/super-nav</property>
+                </not>
+            </condition>
+            <name>rh text</name>
+            <x>300</x>
+            <y>71</y>
+            <w>200</w>
+            <h>142</h>
+        </instrument>
+
+    </instruments>
+
+</PropertyList>

@@ -142,11 +142,11 @@
 		<object-name>navlight_tail</object-name>
 		<condition>
 			<and>
-        <!--
+        
 				<not>
 					<property>/sim/rendering/rembrandt/enabled</property>
 				</not>
-        -->
+        
 				<property>sim/multiplay/generic/int[5]</property>
 			</and>
 		</condition>
@@ -172,11 +172,11 @@
 		<object-name>navlight_landing</object-name>
 		<condition>
 			<and>
-				<!--
+				
 				<not>
 					<property>/sim/rendering/rembrandt/enabled</property>
 				</not>
-				-->
+			
 				<property>sim/multiplay/generic/int[4]</property>
 			</and>
 		</condition>

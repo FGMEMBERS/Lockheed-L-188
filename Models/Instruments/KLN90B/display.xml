@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+
+<!--
+Honeywell Bendix/King KLN-90B GPS
+-->
+
+<PropertyList>
+
+  <name>KLN-90B display</name>
+  <w-base>284</w-base>
+  <h-base>142</h-base>
+
+
+ <layers>
+
+    <layer>
+        <name>supernav display</name>
+        <condition>
+            <property>instrumentation/gps-annunciator/super-nav</property>
+        </condition>
+        <w>284</w>
+        <h>142</h>
+        <texture>
+            <path>Aircraft/b1900d/Models/Instruments/KLN90B/gps.png</path>
+            <x1>0.498</x1>
+            <y1>0.016</y1>
+            <x2>0.700</x2>
+            <y2>0.303</y2>
+        </texture>
+        <emissive>true</emissive>
+    </layer>
+
+    <layer>
+        <name>normal display</name>
+        <condition>
+            <not>
+                <property>instrumentation/gps-annunciator/super-nav</property>
+            </not>
+        </condition>
+        <w>284</w>
+        <h>142</h>
+        <texture>
+            <path>Aircraft/b1900d/Models/Instruments/KLN90B/gps.png</path>
+            <x1>0.532</x1>
+            <y1>0.016</y1>
+            <x2>0.898</x2>
+            <y2>0.303</y2>
+        </texture>
+        <emissive>true</emissive>
+    </layer>
+
+</layers>
+
+</PropertyList>

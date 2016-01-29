@@ -92,10 +92,10 @@ file, these values will be used (they are hardcoded).
     <suction>/systems/vacuum/suction-inhg</suction>
   </heading-indicator>
 
-  <KT-70>
+  <!-- <KT-70>
     <name>kt-70</name>
     <number>0</number>
-  </KT-70>
+  </KT-70> -->
 
   <magnetic-compass>
     <name>magnetic-compass</name>
@@ -143,6 +143,11 @@ file, these values will be used (they are hardcoded).
     <name>wxradar</name>
     <number>0</number>
   </radar>
+
+  <tcas>
+    <name>tcas</name>
+    <number>0</number>
+  </tcas>
 
   <tacan>
     <name>tacan</name>

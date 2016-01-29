@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- CTL 62 ADF Control for ADF-60A
+Active and preset displayed +
+6 frequency memory storage
+2.375"W x 2.625"H
+Freq. range 190.000 - 1749.5 (normal) @ 0.5 khz spacing
+Syd Adams
+ -->
+
+<PropertyList>
+
+    <path>ctl62.ac</path>
+	
+	<animation>
+		<type>material</type>
+		<object-name>CTL-62</object-name>
+
+	<emission>
+		<factor-prop>/controls/lighting/instrument-lights</factor-prop>
+		<red>   0.35 </red>
+		<green> 0.35 </green>
+		<blue>  0.35 </blue>
+		</emission>
+	</animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>freq.002</object-name>
+        <object-name>freq.003</object-name>
+        <object-name>freq.004</object-name>
+        <object-name>freq.dec</object-name>
+        <object-name>freq.005</object-name>
+        <condition>
+            <greater-than>
+                <property>systems/electrical/outputs/adf</property>
+                <value>1</value>
+            </greater-than>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>freq.001</object-name>
+        <condition>
+            <and>
+                <greater-than>
+                    <property>systems/electrical/outputs/adf</property>
+                    <value>1</value>
+                </greater-than>
+                <greater-than>
+                    <property>instrumentation/adf/frequencies/selected-khz</property>
+                    <value>999.5</value>
+                </greater-than>
+            </and>
+        </condition>
+    </animation>
+	
+	<animation>
+    <type>material</type>
+	<object-name>CTL-62.pwr</object-name>
+	<object-name>pwr.off</object-name>
+	<object-name>pwr.on</object-name>
+	<object-name>CTL-62.pwr</object-name>
+	<object-name>freq.knob</object-name>
+	<condition>
+      <property>controls/lighting/instrument-lights</property>
+      <property>/controls/electric/battery-switch</property>
+    </condition>
+	<emission>
+      <factor-prop>controls/lighting/luminosite-lights</factor-prop>
+      <red>   1.00 </red>
+      <green> 0.50 </green>
+      <blue>  0.50 </blue>
+    </emission>
+  </animation>
+  
+  <animation>
+    <type>material</type>
+    <object-name>CTL-62.xfr</object-name>
+	<condition>
+      <property>controls/lighting/instrument-lights</property>
+      <property>/controls/electric/battery-switch</property>
+    </condition>
+	<emission>
+      <factor-prop>controls/lighting/luminosite-lights</factor-prop>
+      <red>   4.00 </red>
+      <green> 4.00 </green>
+      <blue>  4.00 </blue>
+    </emission>
+  </animation>
+  
+  <animation>
+    <name>BackLightAnimation</name>
+    <type>light</type>
+    <light-type>spot</light-type>
+    <object-name>backlight</object-name>
+    <position>
+      <x> 0.02 </x>
+      <y> 0.00 </y>
+      <z>-0.05 </z>
+    </position>
+    <direction>
+      <x> -1.0 </x>
+      <y>  0.0 </y>
+      <z>  1.0 </z>
+    </direction>
+    <ambient>
+      <r>  0.0 </r>
+      <g>  0.0 </g>
+      <b>  0.0 </b>
+      <a>  1.0 </a>
+    </ambient>
+    <diffuse>
+      <r>  0.5 </r>
+      <g>  0.404 </g>
+      <b>  0.2 </b>
+      <a>  1.0 </a>
+    </diffuse>
+    <specular>
+      <r>  0.0 </r>
+      <g>  0.0 </g>
+      <b>  0.0 </b>
+      <a>  1.0 </a>
+    </specular>
+    <dim-factor>
+      <property>systems/electrical/outputs/instrument-lights</property>
+      <!-- optional begin -->
+      <factor>0.04</factor>
+      <offset>0</offset>
+      <min>0</min>
+      <max>1</max>
+      <!-- optional end -->
+    </dim-factor>
+    <attenuation>
+      <c>  0.2 </c>
+      <l>  0.2 </l>
+      <q>  0.4 </q>
+    </attenuation>
+    <exponent>  8.0 </exponent>
+    <cutoff>   48.0   </cutoff>
+    <near-m>    0.0   </near-m>
+    <far-m>     0.09 </far-m>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>BackLightAnimation</object-name>
+    <condition>
+      <property>controls/electric/battery-switch</property>
+    </condition>
+  </animation>
+
+    <animation>
+        <type>select</type>
+        
+        <condition>
+            <greater-than>
+                <property>systems/electrical/outputs/adf</property>
+                <value>1</value>
+            </greater-than>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>stby.001</object-name>
+        <condition>
+            <and>
+                <greater-than>
+                    <property>systems/electrical/outputs/adf</property>
+                    <value>1</value>
+                </greater-than>
+                <greater-than>
+                    <property>instrumentation/adf/frequencies/standby-khz</property>
+                    <value>999.5</value>
+                </greater-than>
+            </and>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>mem.annun</object-name>
+        <condition>
+            <greater-than>
+                <property>systems/electrical/outputs/adf</property>
+                <value>1</value>
+            </greater-than>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>CTL-62.pwr</object-name>
+        <property>instrumentation/adf/serviceable</property>
+        <interpolation>
+            <entry><ind>0</ind><dep>0</dep></entry>
+            <entry><ind>1.0</ind><dep>30</dep></entry>
+        </interpolation>
+        <center>
+            <x-m>0.0</x-m>
+            <y-m>-0.014</y-m>
+            <z-m>-0.018</z-m>
+        </center>
+        <axis>
+            <x>-1</x>
+            <y>0</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+<!--    Active Frequency   -->
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>freq.001</object-name>
+        <property>instrumentation/adf/frequencies/selected-khz</property>
+        <factor>0.0001</factor>
+        <step>1000</step>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>freq.002</object-name>
+        <property>instrumentation/adf/frequencies/selected-khz</property>
+        <factor>0.001</factor>
+        <step>100</step>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>freq.003</object-name>
+        <property>instrumentation/adf/frequencies/selected-khz</property>
+        <factor>0.01</factor>
+        <step>10</step>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>freq.004</object-name>
+        <property>instrumentation/adf/frequencies/selected-khz</property>
+        <factor>0.1</factor>
+        <step>1</step>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>freq.005</object-name>
+        <property>instrumentation/adf/frequencies/selected-khz</property>
+        <factor>1.0</factor>
+        <step>0.1</step>
+        <bias>0.05</bias>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+<!--    Preselected Frequency     -->
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>stby.001</object-name>
+        <property>instrumentation/adf/frequencies/standby-khz</property>
+        <factor>0.0001</factor>
+        <step>1000</step>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>stby.002</object-name>
+        <property>instrumentation/adf/frequencies/standby-khz</property>
+        <factor>0.001</factor>
+        <step>100</step>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>stby.003</object-name>
+        <property>instrumentation/adf/frequencies/standby-khz</property>
+        <factor>0.01</factor>
+        <step>10</step>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>stby.004</object-name>
+        <property>instrumentation/adf/frequencies/standby-khz</property>
+        <factor>0.1</factor>
+        <step>1</step>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>textranslate</type>
+        <object-name>stby.005</object-name>
+        <property>instrumentation/adf/frequencies/standby-khz</property>
+        <factor>1.0</factor>
+        <step>0.1</step>
+        <bias>0.05</bias>
+        <axis>
+            <x>0</x>
+            <y>1</y>
+            <z>0</z>
+        </axis>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>CTL-62.xfr</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+            <command>property-swap</command>
+            <property>instrumentation/adf/frequencies/selected-khz</property>
+            <property>instrumentation/adf/frequencies/standby-khz</property>
+        </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>CTL-62.toggle</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+            <command>property-swap</command>
+            <property>instrumentation/adf/frequencies/selected-khz</property>
+            <property>instrumentation/adf/frequencies/standby-khz</property>
+        </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>pwr.off</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+            <command>property-assign</command>
+            <property>instrumentation/adf/serviceable</property>
+            <value>false</value>
+        </binding>
+        </action>
+         <hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <tooltip-id>pwr.off</tooltip-id>
+                <label>Power: %s</label>
+                <mapping>on-off</mapping>
+                <property>instrumentation/adf/serviceable</property>
+            </binding>
+        </hovered>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>pwr.on</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-assign</command>
+                <property>instrumentation/adf/serviceable</property>
+                <value>true</value>
+            </binding>
+        </action>
+         <hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <tooltip-id>pwr.on</tooltip-id>
+                <label>Power: %s</label>
+                <mapping>on-off</mapping>
+                <property>instrumentation/adf/serviceable</property>
+            </binding>
+        </hovered>
+    </animation>
+ 
+    <animation>
+        <type>pick</type>
+        <object-name>CTL-62.pwr</object-name>
+        <action>
+            <button>3</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-toggle</command>
+                <property>instrumentation/adf/serviceable</property>
+            </binding>
+        </action>
+         <hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <tooltip-id>CTL-62-pwr</tooltip-id>
+                <label>Power: %s</label>
+                <mapping>on-off</mapping>
+                <property>instrumentation/adf/serviceable</property>>
+            </binding>
+        </hovered>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>freq.knob</object-name>
+        <action>
+            <button>1</button>
+            <repeatable>true</repeatable>
+            <interval-sec>0.2</interval-sec>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/adf/frequencies/standby-khz</property>
+                <step>10.0</step>
+                <min>190.0</min>
+                <max>1750.0</max>
+                <wrap>true</wrap>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>freq.knob</object-name>
+        <action>
+            <button>0</button>
+            <repeatable>true</repeatable>
+            <interval-sec>0.2</interval-sec>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/adf/frequencies/standby-khz</property>
+                <step>-10.0</step>
+                <min>190.0</min>
+                <max>1750.0</max>
+                <wrap>true</wrap>
+            </binding>
+        </action>
+         <hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <tooltip-id>freq.knob</tooltip-id>
+                <label>Freq stb: %g</label>
+                <property>instrumentation/adf/frequencies/standby-khz</property>
+            </binding>
+        </hovered>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>freq.knob</object-name>
+        <action>
+            <button>4</button>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/adf/frequencies/standby-khz</property>
+                <step>-1.0</step>
+                <min>190.0</min>
+                <max>1750.0</max>
+                <wrap>true</wrap>
+            </binding>
+        </action>
+    </animation>
+
+    <animation>
+        <type>pick</type>
+        <object-name>freq.knob</object-name>
+        <action>
+            <button>3</button>
+            <binding>
+                <command>property-adjust</command>
+                <property>instrumentation/adf/frequencies/standby-khz</property>
+                <step>1.0</step>
+                <min>190.0</min>
+                <max>1750.0</max>
+            </binding>
+        </action>
+    </animation>
+ 
+  <!-- TEXT OSG -->
+  <text>
+    <name>textosg</name>
+    <type type="string">literal</type>
+    <text type="string">ADF Display</text>
+    <draw-text type="bool">true</draw-text>
+    <font>Helvetica.txf</font>
+    <character-size type="double">0.014</character-size>
+    <character-aspect-ratio type="double">1.0</character-aspect-ratio>
+    <axis-alignment>yz-plane</axis-alignment>
+    <max-height>0.06</max-height>
+    <max-width>0.05</max-width>
+    <font-resolution>
+      <width type="int">64</width>
+      <height type="int">64</height>
+    </font-resolution>
+    <alignment>center-center</alignment>
+    <offsets>
+      <x-m>  0.005 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.000 </z-m>
+    </offsets>
+  </text>
+
+  <animation>
+    <type>material</type>
+    <object-name>textosg</object-name>
+    <emission>
+      <red>   0.8 </red>
+      <green> 0.8 </green>
+      <blue>  0.0 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>textosg</object-name>
+    <condition>
+      <property>sim/panel-hotspots</property>
+    </condition>
+  </animation>
+
+</PropertyList>

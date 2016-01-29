@@ -17,7 +17,9 @@
       <pitch-deg>0.0</pitch-deg>
       </offsets>
     </model>
-    <model>
+
+    <!-- Right Old Radar Screen -->
+    <!-- <model>
      <path>Aircraft/Lockheed-L-188/Models/Instruments/radar/radar.xml</path>
      <offsets>
       <x-m>-10.32617</x-m>
@@ -25,8 +27,10 @@
       <z-m>0.85</z-m>
       <pitch-deg>0.0</pitch-deg>
       </offsets>
-    </model>
-    <model>
+    </model> -->
+
+    <!-- Left Old Radar Screen -->
+    <!-- <model>
      <path>Aircraft/Lockheed-L-188/Models/Instruments/radar/radar.xml</path>
      <offsets>
       <x-m>-10.32617</x-m>
@@ -34,8 +38,116 @@
       <z-m>0.85</z-m>
       <pitch-deg>0.0</pitch-deg>
       </offsets>
+    </model> -->
+
+   <!-- Autopilot -->
+
+   <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/ap/ap.xml</path>
+     <offsets>
+      <x-m>-10.25</x-m>
+      <y-m>-0.84</y-m>
+      <z-m>1.06</z-m>
+      <pitch-deg>0.0</pitch-deg>
+      </offsets>
     </model>
+
+    <!-- Radar RDR-160 -->
+   <!-- <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/RDR-160/RDR-160.xml</path>
+     <offsets>
+      <x-m>-10.25</x-m>
+      <y-m>-0.305</y-m>
+      <z-m>1.15</z-m>
+      <pitch-deg>0.0</pitch-deg>
+      </offsets>
+    </model> -->
+
+  <!-- TCAS -->
+   
+   <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/TCAS/tcas.xml</path>
+     <offsets>
+      <x-m>-10.25</x-m>
+      <y-m>-0.433</y-m>
+      <z-m>1.175</z-m>
+      <pitch-deg>0.0</pitch-deg>
+      </offsets>
+    </model>
+
+
+    <!-- Right Altimeter1 -->
+    <!-- <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/altimeter/alt1.xml</path>
+     <offsets>
+      <x-m>-10.25</x-m>
+      <y-m>0.553</y-m>
+      <z-m>1.00</z-m>
+      <pitch-deg>0.0</pitch-deg>
+      </offsets>
+    </model> -->
+
+    <!-- Left Altimeter1 -->
     <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/altimeter/alt1.xml</path>
+     <offsets>
+      <x-m>-10.25</x-m>
+      <y-m>-0.548</y-m>
+      <z-m>0.97</z-m>
+      <pitch-deg>0.0</pitch-deg>
+      </offsets>
+    </model>
+
+    <!-- Left Altimeter -->
+    <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/altimeter/alt.xml</path>
+     <offsets>
+      <x-m>-10.25</x-m>
+      <y-m>-0.549</y-m>
+      <z-m>1.15</z-m>
+      <pitch-deg>0.0</pitch-deg>
+      </offsets>
+    </model>
+
+    <!-- Right Altimeter-->
+    <!-- <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/altimeter/alt.xml</path>
+     <offsets>
+      <x-m>-10.25</x-m>
+      <y-m>0.553</y-m>
+      <z-m>1.15</z-m>
+      <pitch-deg>0.0</pitch-deg>
+      </offsets>
+    </model> -->
+
+    
+
+    <!-- Right Altimeter Set-->
+    <!-- <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/alt-set/alt-set.xml</path>
+     <offsets>
+      <x-m>-10.22</x-m>
+      <y-m>0.540</y-m>
+      <z-m>1.21</z-m>
+      <pitch-deg>0.0</pitch-deg>
+      </offsets>
+    </model> -->
+
+    <!-- Left Altimeter Set-->
+    <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/alt-set/alt-set.xml</path>
+     <offsets>
+      <x-m>-10.22</x-m>
+      <y-m>-0.552</y-m>
+      <z-m>1.21</z-m>
+      <pitch-deg>0.0</pitch-deg>
+      </offsets>
+    </model>
+
+
+
+    <!-- Left Aux AI -->
+    <!-- <model>
      <path>Aircraft/Lockheed-L-188/Models/Instruments/ai/ai.xml</path>
      <offsets>
       <x-m>-10.35</x-m>
@@ -43,8 +155,10 @@
       <z-m>1.00</z-m>
       <pitch-deg>0.0</pitch-deg>
       </offsets>
-    </model>
-    <model>
+    </model> -->
+
+    <!-- Right Aux AI -->
+    <!-- <model>
      <path>Aircraft/Lockheed-L-188/Models/Instruments/ai/ai.xml</path>
      <offsets>
       <x-m>-10.35</x-m>
@@ -52,5 +166,791 @@
       <z-m>1.00</z-m>
       <pitch-deg>0.0</pitch-deg>
       </offsets>
+    </model> -->
+
+    
+   
+    <!-- Left AI -->
+    <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/ai-707/ai.xml</path>
+     <offsets>
+      <x-m>-10.355</x-m>
+      <y-m>-0.65</y-m>
+      <z-m>1.15</z-m>
+      <pitch-deg>0.0</pitch-deg>
+      </offsets>
     </model>
+
+      <!-- Right AI -->
+   <!-- <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/ai-707/ai.xml</path>
+     <offsets>
+      <x-m>-10.355</x-m>
+      <y-m>0.65</y-m>
+      <z-m>1.15</z-m>
+      <pitch-deg>0.0</pitch-deg>
+      </offsets>
+    </model> -->
+
+
+    <!-- Left HSI -->
+
+    <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/hsi/hsi.xml</path>
+     <offsets>
+      <x-m>-10.31</x-m>
+      <y-m>-0.65</y-m>
+      <z-m>1.025</z-m>
+      <pitch-deg>0.0</pitch-deg>
+      </offsets>
+    </model>
+      <!-- Right HSI -->
+   <!-- <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/hsi/hsi.xml</path>
+     <offsets>
+      <x-m>-10.31</x-m>
+      <y-m>0.65</y-m>
+      <z-m>1.025</z-m>
+      <pitch-deg>0.0</pitch-deg>
+      </offsets>
+    </model> -->
+
+    <!-- Left VSI -->
+    <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/VSI/vsi.xml</path>
+     <offsets>
+      <x-m>-10.25</x-m>
+      <y-m>-0.54</y-m>
+      <z-m>1.06</z-m>
+      <pitch-deg>0.0</pitch-deg>
+      </offsets>
+    </model>
+      <!-- Right VSI -->
+    <!-- <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/VSI.vsi.xml</path>
+     <offsets>
+      <x-m>-10.25</x-m>
+      <y-m>0.495</y-m>
+      <z-m>1.06</z-m>
+      <pitch-deg>0.0</pitch-deg>
+      </offsets>
+    </model> -->
+
+
+
+    <!-- Left ASI -->
+    <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/ASI/asi.xml</path>
+     <offsets>
+      <x-m>-10.25</x-m>
+      <y-m>-0.745</y-m>
+      <z-m>1.16</z-m>
+      <pitch-deg>0.0</pitch-deg>
+      </offsets>
+    </model>
+      <!-- Right ASI -->
+   <!-- <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/ASI/asi.xml</path>
+     <offsets>
+      <x-m>-10.25</x-m>
+      <y-m>0.745</y-m>
+      <z-m>1.16</z-m>
+      <pitch-deg>0.0</pitch-deg>
+      </offsets>
+    </model> -->
+
+
+    <!-- Left RMI -->
+    <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/rmi-citation/rmi.xml</path>
+     <offsets>
+      <x-m>-10.25</x-m>
+      <y-m>-0.75</y-m>
+      <z-m>1.06</z-m>
+      <pitch-deg>0.0</pitch-deg>
+      </offsets>
+    </model>
+      <!-- Right RMI -->
+   <!-- <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/rmi-citation/rmi.xml</path>
+     <offsets>
+      <x-m>-10.25</x-m>
+      <y-m>0.495</y-m>
+      <z-m>1.06</z-m>
+      <pitch-deg>0.0</pitch-deg>
+      </offsets>
+    </model> -->
+
+   <!-- Left RALT -->
+    <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/ralt-citation/ralt.xml</path>
+     <offsets>
+      <x-m>-10.25</x-m>
+      <y-m>-0.745</y-m>
+      <z-m>0.97</z-m>
+      <pitch-deg>0.0</pitch-deg>
+      </offsets>
+    </model>
+      <!-- Right RALT -->
+   <!-- <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/ralt-citation/alt.xml</path>
+     <offsets>
+      <x-m>-10.25</x-m>
+      <y-m>0.495</y-m>
+      <z-m>1.00</z-m>
+      <pitch-deg>0.0</pitch-deg>
+      </offsets>
+    </model> -->
+
+   <!-- Left Side Turn Indicator -->
+
+   <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/turn.xml</path>
+     <offsets>
+      <x-m>-10.25</x-m>
+      <y-m>-0.65</y-m>
+      <z-m>0.94</z-m>
+      <pitch-deg>0.0</pitch-deg>
+      </offsets>
+    </model>
+
+    <!-- Left Glide Path Indicator -->
+
+    <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/vor-citation/vor-ind.xml</path>
+     <offsets>
+      <x-m>-10.25</x-m>
+      <y-m>-0.846</y-m>
+      <z-m>1.16</z-m>
+      <pitch-deg>0.0</pitch-deg>
+      </offsets>
+    </model>    
+
+   <!-- M877 Chronometer -->
+    <model>
+     <path>Aircraft/Instruments-3d/clock/M877/m877.xml</path>
+     <offsets>
+      <x-m>-10.25</x-m>
+      <y-m>-0.925</y-m>
+      <z-m>1.16</z-m>
+      <pitch-deg>0.0</pitch-deg>
+      </offsets>
+     <action>
+	<name>adjust left fine</name>
+	<button>0</button>
+	<x>-203</x>
+	<y>258</y>
+	<w>20</w>
+	<h>32</h>
+	<binding>
+	<command>property-adjust</command>
+	<property>/instrumentation/clock/offset-sec</property>
+	<step>-60</step>
+	<min>0</min>
+	<max>43200</max>
+	<wrap>true</wrap>
+	</binding>
+     </action>
+     <action>
+	<name>adjust left coarse</name>
+	<button>1</button>
+	<x>-203</x>
+	<y>258</y>
+	<w>20</w>
+	<h>32</h>
+	<binding>
+	<command>property-adjust</command>
+	<property>/instrumentation/clock/offset-sec</property>
+	<step>-900</step>
+	<min>0</min>
+	<max>43200</max>
+	<wrap>1</wrap>
+	</binding>
+     </action>
+     <action>
+	<name>adjust right fine</name>
+	<button>0</button>
+	<x>-183</x>
+	<y>258</y>
+	<w>20</w>
+	<h>32</h>
+	<binding>
+	<command>property-adjust</command>
+	<property>/instrumentation/clock/offset-sec</property>
+	<step>60</step>
+	<min>0</min>
+	<max>43200</max>
+	<wrap>true</wrap>
+	</binding>
+     </action>
+     <action>
+	<name>adjust right coarse</name>
+	<button>1</button>
+	<x>-183</x>
+	<y>258</y>
+	<w>20</w>
+	<h>32</h>
+	<binding>
+	<command>property-adjust</command>
+	<property>/instrumentation/clock/offset-sec</property>
+	<step>900</step>
+	<min>0</min>
+	<max>43200</max>
+	<wrap>1</wrap>
+	</binding>
+     </action>
+   </model>    
+    
+
+   <!-- VHF-22 COM 1 -->
+
+   <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/radio/ctl22-com1.xml</path>
+     <offsets>
+      <x-m>-10.25</x-m>
+      <y-m>-0.32</y-m>
+      <z-m>1.035</z-m>
+      <pitch-deg>0.0</pitch-deg>
+      </offsets>
+    </model>    
+
+   <!-- VHF-22 COM 2 -->
+
+   <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/radio/ctl22-com2.xml</path>
+     <offsets>
+      <x-m>-10.25</x-m>
+      <y-m>-0.259</y-m>
+      <z-m>1.035</z-m>
+      <pitch-deg>0.0</pitch-deg>
+     </offsets>
+    </model>    
+
+   <!-- VIR-32 Nav 1 -->
+
+   <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/radio/ctl32-nav1.xml</path>
+     <offsets>
+      <x-m>-10.25</x-m>
+      <y-m>-0.32</y-m>
+      <z-m>0.965</z-m>
+      <pitch-deg>0.0</pitch-deg>
+     </offsets>
+   </model> 
+
+    <!-- VIR-32 Nav 2 -->
+
+    <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/radio/ctl32-nav2.xml</path>
+     <offsets>
+      <x-m>-10.25</x-m>
+      <y-m>-0.259</y-m>
+      <z-m>0.965</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+  </model>
+
+   <!-- ADF 462 -->
+
+   <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/ADF-462/ctl62-adf.xml</path>
+     <offsets>
+      <x-m>-10.25</x-m>
+      <y-m>-0.32</y-m>
+      <z-m>0.895</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+  </model>
+
+   <!-- Transponder TDR-94 -->
+
+  <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/radio/ctl92-transponder.xml</path>
+     <offsets>
+      <x-m>-10.25</x-m>
+      <y-m>-0.259</y-m>
+      <z-m>0.895</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+  </model>
+
+   <!-- OAT-Outside Air Temperature -->
+
+  <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/Citation-OAT/oat.xml</path>
+     <offsets>
+      <x-m>-10.25</x-m>
+      <y-m>-0.842</y-m>
+      <z-m>0.97</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- DME KI266 -->
+
+  <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/dme/ki266.xml</path>
+     <offsets>
+      <x-m>-10.25</x-m>
+      <y-m>-0.433</y-m>
+      <z-m>1.11</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+  </model>
+
+
+  <!-- Standby AI/HSI -->
+
+  <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/Standby/standby.xml</path>
+     <offsets>
+      <x-m>-10.25</x-m>
+      <y-m>-0.433</y-m>
+      <z-m>1.035</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Flaps Gauge -->
+
+  <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/flaps.xml</path>
+     <offsets>
+      <x-m>-10.25</x-m>
+      <y-m>-0.433</y-m>
+      <z-m>0.94</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+  </model>
+
+   <!-- Autobrakes -->
+
+  <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/Autobrakes/autobrakes.xml</path>
+     <offsets>
+      <x-m>-10.25</x-m>
+      <y-m>-0.168</y-m>
+      <z-m>0.895</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+  </model>
+
+ 
+
+<!-- *********************   Engine Gauges   ******************** -->
+
+  <!-- Engine 1 Tachimeter -->
+
+  <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/tachimeter/tachimeter1.xml</path>
+     <offsets>
+      <x-m>-10.25</x-m>
+      <y-m>-0.19</y-m>
+      <z-m>1.193</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Engine 2 Tachimeter -->
+
+   <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/tachimeter/tachimeter2.xml</path>
+     <offsets>
+      <x-m>-10.25</x-m>
+      <y-m>-0.126</y-m>
+      <z-m>1.193</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Engine 3 Tachimeter -->
+
+  <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/tachimeter/tachimeter3.xml</path>
+     <offsets>
+      <x-m>-10.25</x-m>
+      <y-m>-0.19</y-m>
+      <z-m>1.133</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Engine 4 Tachimeter -->
+
+  <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/tachimeter/tachimeter4.xml</path>
+     <offsets>
+      <x-m>-10.25</x-m>
+      <y-m>-0.126</y-m>
+      <z-m>1.133</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Fuel Gauge 1 -->
+
+   <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/fuelgauge1.xml</path>
+      <offsets>
+       <x-m>-10.25</x-m>
+      <y-m>-0.035</y-m>
+      <z-m>0.855</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Fuel Gauge 2 -->
+  
+  <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/fuelgauge2.xml</path>
+      <offsets>
+       <x-m>-10.25</x-m>
+      <y-m>0.052</y-m>
+      <z-m>0.855</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Fuel Gauge 3 -->
+
+  <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/fuelgauge3.xml</path>
+      <offsets>
+       <x-m>-10.25</x-m>
+      <y-m>0.139</y-m>
+      <z-m>0.855</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Fuel Gauge 4 -->
+
+  <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/fuelgauge4.xml</path>
+      <offsets>
+       <x-m>-10.25</x-m>
+      <y-m>0.228</y-m>
+      <z-m>0.855</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Fuel Gauge 5 -->
+
+  <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/fuelgauge5.xml</path>
+      <offsets>
+       <x-m>-10.25</x-m>
+      <y-m>0.315</y-m>
+      <z-m>0.855</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+  </model>
+
+   <!-- Fuel Gauge 6 -->
+
+   <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/fuelgauge6.xml</path>
+      <offsets>
+       <x-m>-10.25</x-m>
+      <y-m>0.402</y-m>
+      <z-m>0.855</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+  </model>
+
+   <!-- Fuel Gauge 7 -->
+
+   <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/fuelgauge7.xml</path>
+      <offsets>
+       <x-m>-10.25</x-m>
+      <y-m>0.489</y-m>
+      <z-m>0.855</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+  </model>
+
+   <!-- Fuel Gauge 8 -->   
+
+   <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/fuelgauge8.xml</path>
+      <offsets>
+       <x-m>-10.25</x-m>
+      <y-m>0.576</y-m>
+      <z-m>0.855</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+  </model>
+
+   <!-- Fuel Flow Engines 1-4 -->
+
+ <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/fuel/fuel1.xml</path>
+      <offsets>
+       <x-m>-10.25</x-m>
+      <y-m>-0.035</y-m>
+      <z-m>0.94</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+  </model>
+
+
+ <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/fuel/fuel2.xml</path>
+      <offsets>
+       <x-m>-10.25</x-m>
+      <y-m>0.052</y-m>
+      <z-m>0.94</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+  </model>
+
+
+ <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/fuel/fuel3.xml</path>
+      <offsets>
+       <x-m>-10.25</x-m>
+      <y-m>0.139</y-m>
+      <z-m>0.94</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+  </model>
+
+
+ <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/fuel/fuel4.xml</path>
+      <offsets>
+       <x-m>-10.25</x-m>
+      <y-m>0.228</y-m>
+      <z-m>0.94</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+  </model>
+
+   <!-- Engine Fuel Pressure Engines 1 and 2-->
+
+  <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/FuelPsi1.xml</path>
+      <offsets>
+       <x-m>-10.25</x-m>
+      <y-m>-0.168</y-m>
+      <z-m>1.060</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+  </model>
+
+<!-- Engine Fuel Pressure Engines 3 and 4 -->
+
+  <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/FuelPsi2.xml</path>
+      <offsets>
+       <x-m>-10.25</x-m>
+      <y-m>-0.168</y-m>
+      <z-m>0.973</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+  </model>
+
+   <!-- Oil Temperature Engines 1-4 -->
+
+
+   <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/oiltemp/oiltemp1.xml</path>
+      <offsets>
+       <x-m>-10.25</x-m>
+      <y-m>-0.035</y-m>
+      <z-m>1.000</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+   <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/oiltemp/oiltemp2.xml</path>
+      <offsets>
+       <x-m>-10.25</x-m>
+      <y-m>0.052</y-m>
+      <z-m>1.000</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+   <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/oiltemp/oiltemp3.xml</path>
+      <offsets>
+       <x-m>-10.25</x-m>
+      <y-m>0.139</y-m>
+      <z-m>1.000</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+   <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/oiltemp/oiltemp4.xml</path>
+      <offsets>
+       <x-m>-10.25</x-m>
+      <y-m>0.228</y-m>
+      <z-m>1.000</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+  </model>
+
+   <!-- Oil Pressure Engines 1-4 -->
+
+   <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/oilpressure/oilpressure1.xml</path>
+      <offsets>
+       <x-m>-10.25</x-m>
+      <y-m>-0.035</y-m>
+      <z-m>1.058</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+   <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/oilpressure/oilpressure2.xml</path>
+      <offsets>
+       <x-m>-10.25</x-m>
+      <y-m>0.052</y-m>
+      <z-m>1.058</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+   <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/oilpressure/oilpressure3.xml</path>
+      <offsets>
+       <x-m>-10.25</x-m>
+      <y-m>0.139</y-m>
+      <z-m>1.058</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+   <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/oilpressure/oilpressure4.xml</path>
+      <offsets>
+       <x-m>-10.25</x-m>
+      <y-m>0.228</y-m>
+      <z-m>1.058</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+  </model>
+
+   <!-- EGT: Exhaust Gas Temperature: Engines 1-4 -->
+
+   <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/egt/egt1.xml</path>
+      <offsets>
+       <x-m>-10.25</x-m>
+      <y-m>-0.035</y-m>
+      <z-m>1.116</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+   <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/egt/egt2.xml</path>
+      <offsets>
+       <x-m>-10.25</x-m>
+      <y-m>0.052</y-m>
+      <z-m>1.116</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+   <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/egt/egt3.xml</path>
+      <offsets>
+       <x-m>-10.25</x-m>
+      <y-m>0.139</y-m>
+      <z-m>1.116</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+   <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/egt/egt4.xml</path>
+      <offsets>
+       <x-m>-10.25</x-m>
+      <y-m>0.228</y-m>
+      <z-m>1.116</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+  </model>
+
+   
+   <!-- Thrust Flow Engines 1-4 -->
+
+  
+
+   <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/thrust/thrust1.xml</path>
+      <offsets>
+       <x-m>-10.25</x-m>
+      <y-m>-0.035</y-m>
+      <z-m>1.174</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+   <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/thrust/thrust2.xml</path>
+      <offsets>
+       <x-m>-10.25</x-m>
+      <y-m>0.052</y-m>
+      <z-m>1.174</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+   <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/thrust/thrust3.xml</path>
+      <offsets>
+       <x-m>-10.25</x-m>
+      <y-m>0.139</y-m>
+      <z-m>1.174</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+   <model>
+     <path>Aircraft/Lockheed-L-188/Models/Instruments/thrust/thrust4.xml</path>
+      <offsets>
+       <x-m>-10.25</x-m>
+      <y-m>0.228</y-m>
+      <z-m>1.174</z-m>
+      <pitch-deg>0.0</pitch-deg>
+    </offsets>
+  </model>
+
+
+
+
+
+
 </PropertyList>
