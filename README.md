@@ -1,4 +1,7 @@
 # Lockheed-L-188
+
+![USATour Ready](usatour.png)
+
 FG Aircraft | Lockheed-L-188 by MD-VP
 Updates, revisions, and upgrades by David Waggoner (SkyBoat) and Israel Hernandez (IAHM-COL)
 Braniff International Airways "Flying Colors" livery by IAHM-COL
