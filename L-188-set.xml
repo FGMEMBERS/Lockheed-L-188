@@ -11,7 +11,7 @@
         <aero>L-188</aero>
         <fuel-fraction>0.8</fuel-fraction>
         <startup>
-            <splash-texture>Aircraft/Lockheed-L-188/splash.png</splash-texture>
+            <splash-texture>Aircraft/Lockheed-L-188/USATour-splash-electra188.png</splash-texture>
         </startup>
 
         <sound>
