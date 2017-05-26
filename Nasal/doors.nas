@@ -1,17 +1,30 @@
-# Lockheed L-188 Electra
-# Nasal door system
-#########################
+# =====
+# Doors
+# =====
 
-var Door =
-{
-	new: func(name, transit_time)
-	{
-		return aircraft.door.new("sim/model/door-positions/" ~ name, transit_time);
-	}
+Doors = {};
+
+Doors.new = func {
+   obj = { parents : [Doors],
+           crew : aircraft.door.new("instrumentation/doors/crew", 8.0),
+           passenger : aircraft.door.new("instrumentation/doors/passenger", 10.0)
+         };
+   return obj;
 };
-var doors =
-{
-	leftfrontdoor: Door.new("leftfrontdoor", 3),
-	leftbackdoor: Door.new("leftbackdoor", 3),
-  cockpitdoor: Door.new("cockpitdoor", 3)
-};
+
+Doors.crewexport = func {
+   me.crew.toggle();
+}
+
+Doors.passengerexport = func {
+   me.passenger.toggle();
+}
+
+
+# ==============
+# Initialization
+# ==============
+
+# objects must be here, otherwise local to init()
+doorsystem = Doors.new();
+
