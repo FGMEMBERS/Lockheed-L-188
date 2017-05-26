@@ -5,7 +5,7 @@
     <model>
         <livery>
             <name type="string">Lockheed (default)</name>
-            <texture>texture.png</texture>
+            <texture>L-188A.png</texture>
         </livery>
     </model>
 </sim>
