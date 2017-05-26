@@ -19,12 +19,25 @@
         </sound>
 
         <model>
+		 
             <path>Aircraft/Lockheed-L-188/Models/L-188.xml</path>
             <livery>
                 <file type="string">default</file>
             </livery>
 
             <autostart type="bool">0</autostart>
+			<L-188>
+			<doors>
+              <door>
+              <position-norm type="double">0.0</position-norm>
+              <name type="string">crew</name>
+              </door>
+			  <door>
+              <position-norm type="double">0.0</position-norm>
+              <name type="string">passenger</name>
+              </door>
+            </doors>
+		  </L-188>
         </model>
 
         <remote>
@@ -117,6 +130,8 @@
             <float n="1">0</float>        <!-- for the shadow -->
             <float n="2">0</float>        <!-- for the shadow -->
             <float n="3" alias="/controls/lighting/panel-norm"/>     <!-- rembrandt cockpit (flightdeck) lights -->
+			<float n="4" alias="/instrumentation/doors/crew/position-norm"/>
+            <float n="5" alias="/instrumentation/doors/passenger/position-norm"/>
 
 
             <string n="0" type="string"></string> <!-- Dual Control analog TDM-mpp1 (magnetos, flaps etc.) -->
@@ -259,9 +274,11 @@
 <instrumentation include="Systems/Lockheed-L-188-init-instrumentation.xml"/>
 
 <nasal>
+		<doors>
+        <file>Aircraft/Lockheed-L-188/Nasal/doors.nas</file>
+        </doors>
     <L-188>
-        <file>Aircraft/Lockheed-L-188/Nasal/L188.nas</file>
-        <file>Aircraft/Lockheed-L-188/Nasal/doors.nas</file>        
+        <file>Aircraft/Lockheed-L-188/Nasal/L188.nas</file>        
 	<file>Aircraft/Lockheed-L-188/Nasal/Electrical.nas</file>
         <file>Aircraft/Lockheed-L-188/Nasal/dc6-mk-prop-rev.nas</file>   
         <file>Aircraft/Lockheed-L-188/Nasal/mk-ki266.nas</file>
