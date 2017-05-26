@@ -2,13 +2,13 @@
 
 ![USATour Ready](usatour.png)
 
-FG Aircraft | Lockheed-L-188 by MD-VP
+FG Aircraft | Lockheed-L-188 by MV-DP
 Updates, revisions, and upgrades by David Waggoner (SkyBoat) and Israel Hernandez (IAHM-COL)
 Braniff International Airways "Flying Colors" livery by IAHM-COL
 
 Note: This version of the Lockheed L-188 now requires Rembrant be enabled for the instruments to all function properly.
 
-Our thanks to MD-VP for providing a well-designed platform of the Lockheed L-188 Electra.  It has made our work easier as we have continued the development of this aircraft that has had such a prominent role in aviation history, both in commercial and military applications.  Even though it was initially conceived in the mid-1950s, (first flight 6 Dec 1957) there are several dozen original airframes still in use.  A total of 170 Electras were built.  This plane should not be confused with Lockheed's earlier Model 10 Electra, a twin engine aircraft infamous for Amelia Earhart's tragic attempt to fly around the globe.  
+Our thanks to MV-DP for providing a well-designed platform of the Lockheed L-188 Electra.  It has made our work easier as we have continued the development of this aircraft that has had such a prominent role in aviation history, both in commercial and military applications.  Even though it was initially conceived in the mid-1950s, (first flight 6 Dec 1957) there are several dozen original airframes still in use.  A total of 170 Electras were built.  This plane should not be confused with Lockheed's earlier Model 10 Electra, a twin engine aircraft infamous for Amelia Earhart's tragic attempt to fly around the globe.  
 
 The L-188 is equipped with four Allison T56 501-D13 turboprop engines rated at 3750 estimated shaft horse power each. The T56, notably is also used in the Lockheed C-130.  The T56 is a constant rotating turboshaft engine at 13,820 RPM.  Because no propeller can spin at this rate, it is geared down by about 13:1 to 1106 RPM and uses variable pitch propellers to control its speed.
 
