@@ -26,65 +26,34 @@
       <type>material</type>
 
       <object-name>Fuselage</object-name>
-
       <object-name>Nosecone</object-name>
+	  <object-name>wingmount</object-name>
       <object-name>Doorfront</object-name>
       <object-name>Doorback</object-name>
       <object-name>Engine1</object-name>
-
-
-
-
       <object-name>Engine2</object-name>
-
-
       <object-name>Engine3</object-name>
-
       <object-name>Engine4</object-name>
-
-
       <object-name>LHwing</object-name>
-
       <object-name>LHaileron</object-name>
-
       <object-name>LHflap</object-name>
-
       <object-name>RHwing</object-name>
-
       <object-name>RHaileron</object-name>
-
       <object-name>RHflap</object-name>
-
-
       <object-name>HStab</object-name>
-
       <object-name>LHelevator</object-name>
-
       <object-name>RHelevator</object-name>
       <object-name>Vstab</object-name>
-
       <object-name>Rudder</object-name>
-
-
       <object-name>RHfrt.grdoor</object-name>
-
       <object-name>LHfrt.grdoor</object-name>
-
-
       <object-name>Spinner1</object-name>
-
       <object-name>Spinner2</object-name>
-
       <object-name>Spinner3</object-name>
-
       <object-name>Spinner4</object-name>
-
       <object-name>RHWheel</object-name>
-
       <object-name>LHWheel</object-name>
-
       <object-name>FrtWheel</object-name>
-
       <object-name>1Blade1</object-name>
       <object-name>1Blade2</object-name>
       <object-name>1Blade3</object-name>
@@ -2185,20 +2154,22 @@
     <animation>
       <type>pick</type>
       <object-name>Doorfront</object-name>
+	  <object-name>FrontDoor</object-name>
       <visible>true</visible>
       <action>
         <button>0</button>
         <repeatable>false</repeatable>
         <binding>
           <command>nasal</command>
-          <script>L-188.doors.leftfrontdoor.toggle();</script>
+          <script>doors.doorsystem.passengerexport();</script>
         </binding>
       </action>
      </animation>
      <animation>
        <type>translate</type>
        <object-name>Doorfront</object-name>
-       <property>sim/model/door-positions/leftfrontdoor/position-norm</property>
+	   <object-name>FrontDoor</object-name>
+       <property>/instrumentation/doors/passenger/position-norm</property>
        <interpolation>
          <entry>
            <ind>0</ind>
@@ -2215,42 +2186,108 @@
          <z>0</z>
        </axis>
      </animation>
-     <animation>
+	 <animation>
        <type>rotate</type>
        <object-name>Doorfront</object-name>
-       <property>sim/model/door-positions/leftfrontdoor/position-norm</property>
-       <interpolation>
-         <entry>
-           <ind>0.2</ind>
-           <dep>0</dep>
-         </entry>
-         <entry>
-           <ind>1.0</ind>
-           <dep>-60</dep>
-         </entry>
-       </interpolation>
+	   <object-name>FrontDoor</object-name>
+       <property>/instrumentation/doors/passenger/position-norm</property>
+	   <factor>-70</factor>
        <center>
-         <x-m>-20.000</x-m>
-         <y-m> 0.000</y-m>
-         <z-m> 1.267</z-m>
-       </center>
+	     <x-m>0</x-m>
+         <y-m>0</y-m>
+         <z-m>0.61929</z-m>
+	   </center>
        <axis>
          <x>1</x>
          <y>0</y>
          <z>0</z>
        </axis>
      </animation>
+	 <!--Stair still in progress-->
+	 <!--
+	 <animation>
+       <type>rotate</type>
+       <object-name>Stair</object-name>
+	   <object-name>Stair.000</object-name>
+	   <object-name>Stair.001</object-name>
+	   <object-name>Stair.002</object-name>
+	   <object-name>Stair.003</object-name>
+	   <object-name>Stair.004</object-name>
+	   <object-name>Stair.005</object-name>
+	   <object-name>Stair.006</object-name>
+	   <object-name>Stair.007</object-name>
+	   <object-name>Stair.008</object-name>
+       <property>/instrumentation/doors/passenger/position-norm</property>
+	   <value>1</value>
+	   <factor>-180</factor>
+       <center>
+	     <x-m>-3.94784</x-m>
+         <y-m>-1.47309</y-m>
+         <z-m>0.2864</z-m>
+	   </center>
+       <axis>
+         <x>1</x>
+         <y>0</y>
+         <z>0</z>
+       </axis>
+     </animation>
+	 <animation>
+       <type>rotate</type>
+       <object-name>Stair</object-name>
+	   <object-name>Stair.000</object-name>
+	   <object-name>Stair.001</object-name>
+	   <object-name>Stair.002</object-name>
+	   <object-name>Stair.003</object-name>
+	   <object-name>Stair.004</object-name>
+	   <object-name>Stair.005</object-name>
+	   <object-name>Stair.007</object-name>
+	   <object-name>Stair.008</object-name>
+       <property>/instrumentation/doors/passenger/position-norm</property>
+	   <value>1</value>
+	   <factor>34</factor>
+       <center>
+	     <x-m>-3.94784</x-m>
+         <y-m>-1.79027</y-m>
+         <z-m>0.2853</z-m>
+	   </center>
+       <axis>
+         <x>1</x>
+         <y>0</y>
+         <z>0</z>
+       </axis>
+     </animation>
+	 <animation>
+       <type>rotate</type>
+	   <object-name>Stair.000</object-name>
+	   <object-name>Stair.002</object-name>
+	   <object-name>Stair.004</object-name>
+       <property>/instrumentation/doors/passenger/position-norm</property>
+	   <value>1</value>
+	   <factor>180</factor>
+       <center>
+	     <x-m>-3.94784</x-m>
+         <y-m>-3.10676</y-m>
+         <z-m>-1.07901</z-m>
+	   </center>
+       <axis>
+         <x>1</x>
+         <y>0</y>
+         <z>0</z>
+       </axis>
+     </animation>
+	 -->
      <animation>
       <type>pick</type>
       <object-name>Doorback</object-name>
       <object-name>Doorglass</object-name>
+	  <object-name>BackDoor</object-name>
       <visible>true</visible>
       <action>
         <button>0</button>
         <repeatable>false</repeatable>
         <binding>
           <command>nasal</command>
-          <script>L-188.doors.leftbackdoor.toggle();</script>
+          <script>doors.doorsystem.crewexport();</script>
         </binding>
       </action>
      </animation>
@@ -2258,7 +2295,8 @@
        <type>translate</type>
        <object-name>Doorback</object-name>
        <object-name>Doorglass</object-name>
-       <property>sim/model/door-positions/leftbackdoor/position-norm</property>
+	   <object-name>BackDoor</object-name>
+       <property>/instrumentation/doors/crew/position-norm</property>
        <interpolation>
          <entry>
            <ind>0</ind>
@@ -2275,26 +2313,18 @@
          <z>0</z>
        </axis>
      </animation>
-     <animation>
+	 	 <animation>
        <type>rotate</type>
        <object-name>Doorback</object-name>
        <object-name>Doorglass</object-name>
-       <property>sim/model/door-positions/leftbackdoor/position-norm</property>
-       <interpolation>
-         <entry>
-           <ind>0.2</ind>
-           <dep>0</dep>
-         </entry>
-         <entry>
-           <ind>1.0</ind>
-           <dep>-60</dep>
-         </entry>
-       </interpolation>
+	   <object-name>BackDoor</object-name>
+       <property>/instrumentation/doors/crew/position-norm</property>
+	   <factor>-70</factor>
        <center>
-         <x-m>-20.000</x-m>
-         <y-m> 0.000</y-m>
-         <z-m> 1.267</z-m>
-       </center>
+	     <x-m>0</x-m>
+         <y-m>0</y-m>
+         <z-m>0.61929</z-m>
+	   </center>
        <axis>
          <x>1</x>
          <y>0</y>
