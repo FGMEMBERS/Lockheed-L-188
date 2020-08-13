@@ -106,6 +106,12 @@
       <texture-prop>texture</texture-prop>
 
       <texture>textureF.png</texture>
+     
+      <specular>
+        <red-prop>specular/red</red-prop>
+        <green-prop>specular/green</green-prop>
+        <blue-prop>specular/blue</blue-prop>
+      </specular>
 
     </animation>
 
