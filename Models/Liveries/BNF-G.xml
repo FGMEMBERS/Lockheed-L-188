@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+  <sim>
+    <model>
+      	<livery>
+        	<name type="string">Braniff Intl. N9701C (Green)</name>
+        	<texture>Liveries/BNF-G.png</texture>
+      	</livery>
+      	<propllers>
+        	<texture>Liveries/prop-G.png</texture>
+    	</propllers>
+    </model>
+  </sim>
+</PropertyList>
