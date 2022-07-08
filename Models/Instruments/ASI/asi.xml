@@ -9,7 +9,7 @@
 		<indicated-mach>instrumentation/airspeed-indicator/indicated-mach</indicated-mach>
 	</params>
 
-<!--	<animation>
+	<animation>
 		<type>material</type>
 		<emission>
 			<red>1</red>
@@ -17,7 +17,7 @@
 			<blue>0.5</blue>
 			<factor-prop>controls/lighting/instruments-norm</factor-prop>
 		</emission>
-	</animation>-->
+	</animation>
 
 	<animation>
 		<type>rotate</type>
