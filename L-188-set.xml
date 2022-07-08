@@ -159,7 +159,7 @@
         <multiplay>
           <generic>
 	    <int n="0" type="int">0</int>  <!-- Dual Control boolean switches-->
-	    <int n="2" alias="/controls/lighting/beacon-state/state			<!-- Nav light - white becon -->
+	    <int n="2" alias="/controls/lighting/beacon-state/state"/>			<!-- Nav light - white becon -->
 	    <int n="3" alias="/controls/lighting/strobe-state/state"/>			<!-- Nav light - red becon -->
 	    <int n="4" alias="/controls/lighting/landing-lights"/>			<!-- Landing light -->
 	    <int n="5" alias="/controls/lighting/nav-lights"/>				<!-- Nav light - top, bottom, left, right, back -->
@@ -169,8 +169,6 @@
             <float n="3" alias="/controls/lighting/panel-norm"/>     <!-- rembrandt cockpit (flightdeck) lights -->
 	    <float n="4" alias="/instrumentation/doors/crew/position-norm"/>
             <float n="5" alias="/instrumentation/doors/passenger/position-norm"/>
-
-
             <string n="0" type="string"></string> <!-- Dual Control analog TDM-mpp1 (magnetos, flaps etc.) -->
             <string n="1" type="string"></string> <!-- Dual Control analog TDM-mpp2 only pilot to copilot (fuel in tank etc.) -->
 
