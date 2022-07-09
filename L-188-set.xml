@@ -250,7 +250,7 @@
 
     <controls>
         <gear>
-            <brake-parking>1</brake-parking>
+            <brake-parking>1.5</brake-parking>
         </gear>
         <engines>
             <engine n="0">
