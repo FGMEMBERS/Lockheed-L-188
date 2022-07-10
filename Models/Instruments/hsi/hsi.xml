@@ -49,7 +49,7 @@
     <object-name>HSI.hdg-bug</object-name>
     <object-name>HSI.CRS.needle</object-name>
     <object-name>HSI.CRS.deflection</object-name>
-    <<!-- emission>
+    <!-- emission>
       <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
       <red>   0.50 </red>
       <green> 0.25 </green>
@@ -58,14 +58,14 @@
   </animation> -->
   
   <animation>
-		<type>material</type>
-		<emission>
-			<red>1</red>
-			<green>0.8</green>
-			<blue>0.5</blue>
-			<factor-prop>controls/lighting/instruments-norm</factor-prop>
-		</emission>
-	</animation>
+	<type>material</type>
+	<emission>
+		<red>1</red>
+		<green>0.8</green>
+		<blue>0.5</blue>
+		<factor-prop>controls/lighting/instruments-norm</factor-prop>
+	</emission>
+  </animation>
 
   <animation>
     <type>rotate</type>
