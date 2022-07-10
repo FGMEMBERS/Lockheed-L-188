@@ -255,7 +255,7 @@
                 <name>#2 Alt</name>
                 <selected type="bool">1</selected>
             </tank>
-            <tank n="4">
+	      <tank n="4">
                 <name>#3 Alt</name>
                 <selected type="bool">1</selected>
             </tank>
