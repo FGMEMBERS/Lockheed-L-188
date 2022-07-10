@@ -92,9 +92,9 @@
             <front-right-direction-deg type="double">315</front-right-direction-deg>
             <dynamic-view type="bool">true</dynamic-view>
                   <x-offset-m archive="y">0</x-offset-m>
-                      <y-offset-m archive="y">1.25</y-offset-m>
-                      <z-offset-m archive="y">-8.9</z-offset-m>
-                      <pitch-offset-deg>-18</pitch-offset-deg>
+                  <y-offset-m archive="y">1.25</y-offset-m>
+                  <z-offset-m archive="y">-8.9</z-offset-m>
+                  <pitch-offset-deg>-18</pitch-offset-deg>
             <limits>
               <enabled type="bool">false</enabled>
             </limits>
@@ -113,7 +113,8 @@
 	   <x-offset-m archive="y"> 0.0 </x-offset-m>      
 	   <!-- Right -->    
 	   <y-offset-m archive="y"> 1.500 </y-offset-m>    
-	   <!-- Up -->    <z-offset-m archive="y"> 14.572 </z-offset-m>    
+	   <!-- Up -->    
+	   <z-offset-m archive="y"> 14.572 </z-offset-m>    
 	   <!-- Back -->    
 	   <pitch-offset-deg> -20 </pitch-offset-deg>    
 	   <default-field-of-view-deg> 70 </default-field-of-view-deg>   
@@ -283,9 +284,9 @@
 	<file>Aircraft/Lockheed-L-188/Nasal/Electrical.nas</file>
         <file>Aircraft/Lockheed-L-188/Nasal/dc6-mk-prop-rev.nas</file>   
         <file>Aircraft/Lockheed-L-188/Nasal/mk-ki266.nas</file>
-        <script>
-	  <![CDATA[ki266.new(0);]]>
-	</script>
+           <script>
+	     <![CDATA[ki266.new(0);]]>
+	   </script>
         <file>Aircraft/Lockheed-L-188/Nasal/mk-agl-radar.nas</file>
         <file>Aircraft/Lockheed-L-188/Nasal/mk-ap-helper.nas</file>
         <file>Aircraft/Lockheed-L-188/Nasal/mk-swap-nav.nas</file>
