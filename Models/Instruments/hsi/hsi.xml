@@ -24,15 +24,14 @@
     <object-name>HSI.crs2</object-name>
     <object-name>HSI.CRS.needle</object-name>
     <object-name>HSI.CRS.deflection</object-name>
-    
     <object-name>HSI.vitre</object-name>
   </animation>
 
   <!-- working for Rembrandt -->
-  <effect>
+  <!-<effect>
     <inherits-from>Effects/model-transparent</inherits-from>
     <object-name>HSI.vitre</object-name>
-  </effect>
+  </effect>-->
  
   <animation>
     <type>material</type>
@@ -51,6 +50,7 @@
     <object-name>HSI.CRS.deflection</object-name>
     <!-- emission>
       <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+	<factor-prop>controls/lighting/instruments-norm</factor-prop>
       <red>   0.50 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
@@ -63,7 +63,7 @@
 		<red>1</red>
 		<green>0.8</green>
 		<blue>0.5</blue>
-		<factor-prop>controls/lighting/instrument-lights-</factor-prop>
+		<factor-prop>controls/lighting/instrument-lights--norm</factor-prop>
 	</emission>
   </animation>
 
