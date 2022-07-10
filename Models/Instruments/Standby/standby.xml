@@ -53,11 +53,10 @@
 	<animation>
 		<type>material</type>
 		<object-name>Mach</object-name>
-		<object-name>Mach</object-name>
 		<object-name>ILS</object-name>
-		<!-- <object-name>Altimeter pressure setting hpa</object-name>
+		<object-name>Altimeter pressure setting hpa</object-name>
 		<object-name>Altimeter thousands counter</object-name>
-		<object-name>Altimeter pressure setting</object-name> -->
+		<object-name>Altimeter pressure setting</object-name>
 		<object-name>AI</object-name>
 		<object-name>RollPtr</object-name>
 		<object-name>SpdTape</object-name>
@@ -182,7 +181,7 @@
 			<height type="int">32</height>
 		</font-resolution>
 	</text>
-	<animation>
+	<!-- <animation>
 		<type>material</type>
 		<object-name>Mach</object-name>
 		<object-name>ILS</object-name>
@@ -205,7 +204,7 @@
 			<blue alias="../../../colors/white/blue" />
 			<factor-prop>instrumentation/standby/brightness-norm</factor-prop>
 		</emission>
-	</animation>
+	</animation> -->
 	<animation>
 		<name>Text</name>
 		<object-name>Mach</object-name>
