@@ -70,6 +70,7 @@
 		<object-name>CageBtn</object-name>
 		<object-name>CageBtnText</object-name>
 		<object-name>BaroKnob</object-name>
+		<object-name>Bezel</object-name>
 		<emission>
 			<red>1.5</red>
 			<green>1.965</green>
@@ -375,7 +376,7 @@
 	</animation>
 
 	<!-- Lightmaps -->
-	<effect>
+	<!-- <effect>
 		<inherits-from>Aircraft/L-188/Models/Effects/L-188lightmap</inherits-from>
 		<parameters>
 			<lightmap-factor-prop>sim/model/lights/panel-lightmap</lightmap-factor-prop>
@@ -393,7 +394,7 @@
 			</texture>
 		</parameters>
 		<object-name>Bezel</object-name>
-	</effect>
+	</effect> -->
 	
 	<!-- Rembrandt !! -->
 	<!-- <effect>
