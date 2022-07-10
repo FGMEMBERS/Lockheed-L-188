@@ -101,15 +101,34 @@
           </config>
         </view>
 
-        <view n="101">   <name>Cargo</name>   <type>lookfrom</type>   <internal archive="y">true</internal>   <config>    <from-model type="bool">true</from-model>    <from-model-idx type="int">0</from-model-idx>    <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>    <pitch-offset-deg>-5</pitch-offset-deg>    <x-offset-m archive="y"> 0.0 </x-offset-m>      <!-- Right -->    <y-offset-m archive="y"> 1.500 </y-offset-m>    <!-- Up -->    <z-offset-m archive="y"> 14.572 </z-offset-m>    <!-- Back -->    <pitch-offset-deg> -20 </pitch-offset-deg>    <default-field-of-view-deg> 70 </default-field-of-view-deg>   </config>  </view>      <chase-distance-m type="double" archive="y">-50.0</chase-distance-m>
+        <view n="101">   
+	 <name>Cargo</name>   
+	 <type>lookfrom</type>   
+	 <internal archive="y">true</internal>   
+	 <config>    
+	   <from-model type="bool">true</from-model>    
+	   <from-model-idx type="int">0</from-model-idx>    
+           <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>    
+	   <pitch-offset-deg>-5</pitch-offset-deg>    
+	   <x-offset-m archive="y"> 0.0 </x-offset-m>      
+	   <!-- Right -->    
+	   <y-offset-m archive="y"> 1.500 </y-offset-m>    
+	   <!-- Up -->    <z-offset-m archive="y"> 14.572 </z-offset-m>    
+	   <!-- Back -->    
+	   <pitch-offset-deg> -20 </pitch-offset-deg>    
+	   <default-field-of-view-deg> 70 </default-field-of-view-deg>   
+	</config>  
+      </view>      <
+	    
+	chase-distance-m type="double" archive="y">-50.0</chase-distance-m>
 
         <multiplay>
           <generic>
-	          <int n="0" type="int">0</int>  <!-- Dual Control boolean switches-->
-			      <int n="2" alias="/controls/lighting/beacon-state/state"/>						<!-- Nav light - white becon -->
-			      <int n="3" alias="/controls/lighting/strobe-state/state"/>						<!-- Nav light - red becon -->
-			      <int n="4" alias="/controls/lighting/landing-lights"/>							<!-- Landing light -->
-			      <int n="5" alias="/controls/lighting/nav-lights"/>								<!-- Nav light - top, bottom, left, right, back -->
+	     <int n="0" type="int">0</int>  <!-- Dual Control boolean switches-->
+	     <int n="2" alias="/controls/lighting/beacon-state/state"/>			<!-- Nav light - white becon -->
+	     <int n="3" alias="/controls/lighting/strobe-state/state"/>			<!-- Nav light - red becon -->
+	     <int n="4" alias="/controls/lighting/landing-lights"/>			<!-- Landing light -->
+	     <int n="5" alias="/controls/lighting/nav-lights"/>				<!-- Nav light - top, bottom, left, right, back -->
 
             <float n="0">0</float>        <!-- for the shadow -->
             <float n="1">0</float>        <!-- for the shadow -->
