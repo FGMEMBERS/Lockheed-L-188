@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
+﻿<?xml version="1.0" encoding="UTF-8" />
 
 <PropertyList>
 
@@ -57,10 +57,10 @@
 	</animation>
 	
 	    				<!-- lights -->
-	        <effect>
-        <inherits-from>Effects/model-transparent</inherits-from>
-   <object-name>autobrake_light</object-name>
-    </effect>
+	<effect>
+        	<inherits-from>Effects/model-transparent</inherits-from>
+		<object-name>autobrake_light</object-name>
+        </effect>
     
     		<animation>
 		<name>instrument lighting</name>
