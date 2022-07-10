@@ -63,7 +63,7 @@
 		<red>1</red>
 		<green>0.8</green>
 		<blue>0.5</blue>
-		<factor-prop>controls/lighting/instruments-norm</factor-prop>
+		<factor-prop>controls/lighting/instrument-lights-</factor-prop>
 	</emission>
   </animation>
 
