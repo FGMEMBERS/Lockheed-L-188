@@ -49,6 +49,35 @@
 			<factor-prop>controls/lighting/display-norm</factor-prop>
 		</emission>
 	</animation>
+	
+	<animation>
+		<type>material</type>
+		<object-name>Mach</object-name>
+		<object-name>Mach</object-name>
+		<object-name>ILS</object-name>
+		<!-- <object-name>Altimeter pressure setting hpa</object-name>
+		<object-name>Altimeter thousands counter</object-name>
+		<object-name>Altimeter pressure setting</object-name> -->
+		<object-name>AI</object-name>
+		<object-name>RollPtr</object-name>
+		<object-name>SpdTape</object-name>
+		<object-name>ILSPtr</object-name>
+		<object-name>GSPtr</object-name>
+		<object-name>AltTape</object-name>
+		<object-name>PlusBtn</object-name>
+		<object-name>PlusBtnText</object-name>
+		<object-name>MinusBtn</object-name>
+		<object-name>MinusBtnText</object-name>
+		<object-name>CageBtn</object-name>
+		<object-name>CageBtnText</object-name>
+		<object-name>BaroKnob</object-name>
+		<emission>
+			<red>1.5</red>
+			<green>1.965</green>
+			<blue>1.42</blue>
+			<factor-prop>controls/lighting/display-norm</factor-prop>
+		</emission>
+	</animation>
 
 	<text>
 		<name>Mach</name>
@@ -153,7 +182,6 @@
 			<height type="int">32</height>
 		</font-resolution>
 	</text>
-
 	<animation>
 		<type>material</type>
 		<object-name>Mach</object-name>
@@ -369,13 +397,13 @@
 	</effect>
 	
 	<!-- Rembrandt !! -->
-	<effect>
+	<!-- <effect>
 		<name>REMBRANDT transparency</name>
 		<inherits-from>Effects/model-transparent</inherits-from>
 		<object-name>StdBtnText</object-name>
 		<object-name>PlusBtnText</object-name>
 		<object-name>MinusBtnText</object-name>
 		<object-name>CageBtnText</object-name>
-	</effect>
+	</effect> -->
 
 </PropertyList>
