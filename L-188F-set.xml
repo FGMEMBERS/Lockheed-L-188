@@ -119,9 +119,9 @@
 	   <pitch-offset-deg> -20 </pitch-offset-deg>    
 	   <default-field-of-view-deg> 70 </default-field-of-view-deg>   
 	</config>  
-      </view>      <
+      </view>
 	    
-	chase-distance-m type="double" archive="y">-50.0</chase-distance-m>
+	<chase-distance-m type="double" archive="y">-50.0</chase-distance-m>
 
         <multiplay>
           <generic>
