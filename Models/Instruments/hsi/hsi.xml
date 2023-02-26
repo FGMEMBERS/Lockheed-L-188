@@ -28,10 +28,10 @@
   </animation>
 
   <!-- working for Rembrandt -->
-  <!-- <effect>
+  <effect>
     <inherits-from>Effects/model-transparent</inherits-from>
     <object-name>HSI.vitre</object-name>
-  </effect> -->
+  </effect>
  
   <animation>
     <type>material</type>
@@ -48,14 +48,14 @@
     <object-name>HSI.hdg-bug</object-name>
     <object-name>HSI.CRS.needle</object-name>
     <object-name>HSI.CRS.deflection</object-name>
-    <!-- emission>
+    <emission>
       <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
 	<factor-prop>controls/lighting/instruments-norm</factor-prop>
       <red>   0.50 </red>
       <green> 0.25 </green>
       <blue>  0.25 </blue>
     </emission>
-  </animation> -->
+  </animation>
   
   <animation>
 	<type>material</type>
