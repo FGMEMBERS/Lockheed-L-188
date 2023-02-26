@@ -5,7 +5,7 @@
     <sim>
 
         <description>Lockheed L-188A Electra (YASim)</description>
-        <author>niltondc (3D Model), Martien van der Plas; David Waggoner: Engine eplacement to the correct Allison turboprop engines and Flightdeck instrument installation</author>
+        <author>niltondc (3D Model), Martien van der Plas; David Waggoner: Flightdeck instrument installation</author>
         <aircraft-version>1.0.0</aircraft-version>
         <flight-model>yasim</flight-model>
         <aero>L-188</aero>
